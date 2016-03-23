@@ -1,0 +1,329 @@
+<?php //Gallery
+require '_header.php'; ?>
+<div id="page" class="page-Gallery">
+    <section class="header">
+        <div class="containt-left">
+            <a href="#">
+                <img src="img/logo.png"/>
+                <p>Hiking and Camping Club</p>
+            </a>
+        </div>
+        <div class="containt-menu">
+            <ul class="menu">
+                <li ><a href="home.php">Home</a></li>
+                <li ><a href="About-Club.php">About Club</a></li>
+                <li ><a href="Trip-Schedule.php">Trip Schedule</a></li>
+                <li class="active"><a href="Gallery.php">Gallery</a></li>
+                <li ><a href="Contacts.php">Contacts</a></li>
+            </ul>
+        </div>
+        <div class="containt-search">
+            <a class="fa fa-search" href="javascript:void(0)" onclick="displayForm(this)" ></a>
+            <form class="search">
+                <label class="search-label">
+                    <input class="search-input" type="text" placeholder="Search" autocomplete="off"
+                           name="s" />
+                    <span class="search-liveout"></span>
+                </label>
+                <button class="fa fa-search" type="submit"></button>
+            </form>
+        </div>
+    </section>
+
+    <section class="main-content">
+        <div class="slide">
+            <i id="left" class="fa fa-chevron-left fa-3x"></i>
+            <img src="img/Image1.png" />
+            <i id="right" class="fa fa-chevron-right fa-3x"></i>
+        </div>
+        <div class="main-top">
+            <ul class="top-menu">
+                <li onclick="changePic1()"><a class="visited" href="#">show all</a> </li>
+                <li onclick="changePic2()"><a href="#">first category</a> </li>
+                <li onclick=""><a href="#">second category</a> </li>
+                <li><a href="#">third category</a> </li>
+            </ul>
+            <ul class="pic-slide" style="display: block">
+                <li>
+                    <a href="#" >
+                        <img src="img/Image11.png"/>
+                        <div class="layer">
+                            <i class="fa fa-search-plus fa-2x"></i>
+                        </div>
+                    </a>
+                    <p class="pic">Image 1</p>
+                </li>
+                <li>
+                    <a href="#" >
+                        <img src="img/Image22.png"/>
+                        <div class="layer">
+                            <i class="fa fa-search-plus fa-2x"></i>
+                        </div>
+                    </a>
+                    <p class="pic">Image 2</p>
+                </li>
+                <li>
+                    <a href="#" >
+                        <img src="img/Image33.png"/>
+                        <div class="layer">
+                            <i class="fa fa-search-plus fa-2x"></i>
+                        </div>
+                    </a>
+                    <p class="pic">Image 3</p>
+                </li>
+                <li>
+                    <a href="#" >
+                        <img src="img/Image44.png"/>
+                        <div class="layer">
+                            <i class="fa fa-search-plus fa-2x"></i>
+                        </div>
+                    </a>
+                    <p class="pic">Image 4</p>
+                </li>
+                <li>
+                    <a href="#" >
+                        <img src="img/Image55.png"/>
+                        <div class="layer">
+                            <i class="fa fa-search-plus fa-2x"></i>
+                        </div>
+                    </a>
+                    <p class="pic">Image 5</p>
+                </li>
+                <li>
+                    <a href="#" >
+                        <img src="img/Image66.png"/>
+                        <div class="layer">
+                            <i class="fa fa-search-plus fa-2x"></i>
+                        </div>
+                    </a>
+                    <p class="pic">Image 6</p>
+                </li>
+                <li>
+                    <a href="#" >
+                        <img src="img/Image77.png"/>
+                        <div class="layer">
+                            <i class="fa fa-search-plus fa-2x"></i>
+                        </div>
+                    </a>
+                    <p class="pic">Image 7</p>
+                </li>
+                <li>
+                    <a href="#" >
+                        <img src="img/Image88.png"/>
+                        <div class="layer">
+                            <i class="fa fa-search-plus fa-2x"></i>
+                        </div>
+                    </a>
+                    <p class="pic">Image 8</p>
+                </li>
+            </ul>
+
+            <ul class="pic-slide" style="display: none;">
+                <li>
+                    <a href="#" >
+                        <img src="img/Image22.png"/>
+                        <div class="layer">
+                            <i class="fa fa-search-plus fa-2x"></i>
+                        </div>
+                    </a>
+                    <p class="pic">Image 2</p>
+                </li>
+                <li>
+                    <a href="#" >
+                        <img src="img/Image33.png"/>
+                        <div class="layer">
+                            <i class="fa fa-search-plus fa-2x"></i>
+                        </div>
+                    </a>
+                    <p class="pic">Image 3</p>
+                </li><li>
+                    <a href="#" >
+                        <img src="img/Image77.png"/>
+                        <div class="layer">
+                            <i class="fa fa-search-plus fa-2x"></i>
+                        </div>
+                    </a>
+                    <p class="pic">Image 7</p>
+                </li><li>
+                    <a href="#" >
+                        <img src="img/Image88.png"/>
+                        <div class="layer">
+                            <i class="fa fa-search-plus fa-2x"></i>
+                        </div>
+                    </a>
+                    <p class="pic">Image 8</p>
+                </li><li>
+                    <a href="#" >
+                        <img src="img/Image44.png"/>
+                        <div class="layer">
+                            <i class="fa fa-search-plus fa-2x"></i>
+                        </div>
+                    </a>
+                    <p class="pic">Image 4</p>
+                </li><li>
+                    <a href="#" >
+                        <img src="img/Image55.png"/>
+                        <div class="layer">
+                            <i class="fa fa-search-plus fa-2x"></i>
+                        </div>
+                    </a>
+                    <p class="pic">Image 5</p>
+                </li><li>
+                    <a href="#" >
+                        <img src="img/Image11.png"/>
+                        <div class="layer">
+                            <i class="fa fa-search-plus fa-2x"></i>
+                        </div>
+                    </a>
+                    <p class="pic">Image 1</p>
+                </li><li>
+                    <a href="#" >
+                        <img src="img/Image66.png"/>
+                        <div class="layer">
+                            <i class="fa fa-search-plus fa-2x"></i>
+                        </div>
+                    </a>
+                    <p class="pic">Image 6</p>
+                </li>
+            </ul>
+
+            <ul class="pic-slide" style="display: none;">
+                <li>
+                    <a href="#" >
+                        <img src="img/Image33.png"/>
+                        <div class="layer">
+                            <i class="fa fa-search-plus fa-2x"></i>
+                        </div>
+                    </a>
+                    <p class="pic">Image 3</p>
+                </li>
+                <li>
+                    <a href="#" >
+                        <img src="img/Image66.png"/>
+                        <div class="layer">
+                            <i class="fa fa-search-plus fa-2x"></i>
+                        </div>
+                    </a>
+                    <p class="pic">Image 6</p>
+                </li><li>
+                    <a href="#" >
+                        <img src="img/Image88.png"/>
+                        <div class="layer">
+                            <i class="fa fa-search-plus fa-2x"></i>
+                        </div>
+                    </a>
+                    <p class="pic">Image 8</p>
+                </li><li>
+                    <a href="#" >
+                        <img src="img/Image55.png"/>
+                        <div class="layer">
+                            <i class="fa fa-search-plus fa-2x"></i>
+                        </div>
+                    </a>
+                    <p class="pic">Image 5</p>
+                </li><li>
+                    <a href="#" >
+                        <img src="img/Image77.png"/>
+                        <div class="layer">
+                            <i class="fa fa-search-plus fa-2x"></i>
+                        </div>
+                    </a>
+                    <p class="pic">Image 7</p>
+                </li><li>
+                    <a href="#" >
+                        <img src="img/Image44.png"/>
+                        <div class="layer">
+                            <i class="fa fa-search-plus fa-2x"></i>
+                        </div>
+                    </a>
+                    <p class="pic">Image 4</p>
+                </li><li>
+                    <a href="#" >
+                        <img src="img/Image22.png"/>
+                        <div class="layer">
+                            <i class="fa fa-search-plus fa-2x"></i>
+                        </div>
+                    </a>
+                    <p class="pic">Image 2</p>
+                </li><li>
+                    <a href="#" >
+                        <img src="img/Image11.png"/>
+                        <div class="layer">
+                            <i class="fa fa-search-plus fa-2x"></i>
+                        </div>
+                    </a>
+                    <p class="pic">Image 1</p>
+                </li>
+            </ul>
+
+        </div>
+
+        <div class="main-bottom">
+            <h1>Join Us On the Beach</h1>
+            <div class="bottom-content">
+                <h4>Enjoy getting closer to the nature? You're in the right place!</h4>
+                <p class="b-art">
+                    We realize we are models for our clients behavior. We take minimal impact
+                    and Leave No Trace ethics seriously. We never use disposable plates or silverware
+                    for our trips, as an example. We strive to keep our group sizes relatively small
+                    when rock climbing to minimize our impact on other park users.   <br><br>
+                    Cleanups are a fun, free, easy way to give back to your community by keeping
+                    pollution from entering the Pacific Ocean. It’s easy to participate – just register
+                    for one of our schedule cleanups, or request materials from our office to clean on
+                    your own! Volunteers are encouraged to Bring Your Own buckets, gloves, and reusable
+                    bags to decrease trash. Beach cleanups demonstrate how individuals of all ages can
+                    protect the marine environment by keeping our coastlines free from harmful pollution
+                    and debris.
+                </p>
+                <img src="img/beach.png"/>
+            </div>
+        </div>
+        <section class="footer">
+            <div class="bg">
+                <ul class="bottom-menu">
+                    <li><a href="home.php">Home</a></li>
+                    <li><a href="About-Club.php">About Club</a></li>
+                    <li><a href="Trip-Schedule.php">Trip Schedule</a></li>
+                    <li><a href="Gallery.php">Gallery</a></li>
+                    <li><a href="Contacts.php">Contacts</a></li>
+                </ul>
+                <div class="mid">
+                    <div class="navigation">
+                        <img src="img/icon-Navigation.png"/>
+                        <p>28 JACKSON BLVD
+                            STE 151, CHICAGO
+                            IL 60604-2340 </p>
+                    </div>
+                    <div class="message">
+                        <img src="img/icon-Message.png"/>
+                        <p>mail@demolink.com</p>
+                    </div>
+                </div>
+                <div class="right">
+                    <div class="share">
+                        <div class="circular1">
+                            <i class="fa fa-youtube"></i>
+                        </div>
+                        <div class="circular1">
+                            <i class="fa fa-tumblr"></i>
+                        </div>
+                        <div class="circular1">
+                            <i class="fa fa-twitter "></i>
+                        </div>
+                        <div class="circular1">
+                            <i class="fa fa-facebook"></i>
+                        </div>
+                        <div class="circular1">
+                            <i class="fa fa-instagram"></i>
+                        </div>
+                    </div>
+                    <div class="copyright">
+                        Hiking and Camping Club © 2016. Privacy Policy
+                    </div>
+                </div>
+            </div>
+        </section>
+<a id="toTop" class="toTop" href="#" ><i class="fa fa-chevron-circle-up"></i> </a>
+</section>
+<div>
+<?php require '_footer.php'; ?>
