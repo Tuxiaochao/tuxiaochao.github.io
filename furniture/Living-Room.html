@@ -1,0 +1,2404 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="utf-8">
+    <meta id="viewport" name="viewport"
+          content="width=device-width,initial-scale=1.0,
+                maximum-scale=1.0,user-scalable=no">
+    <link rel="profile" href="http://gmpg.org/xfn/11">
+    <link rel="stylesheet" href="lib/HTML5-Reset/assets/css/reset.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link href="font-awesome-4.5.0/css/font-awesome.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="css/swiper.min.css" />
+    <script type="text/javascript" src="lib/jquery/jquery.min.js"></script>
+</head>
+<body>
+<section class="header">
+    <div class="nav">
+        <div class="contain">
+            <div onmouseover="changeColor(this)"  onmouseout="changeColor2(this)"
+                 class="currencies-block-top">
+                <i class="fa fa-usd fa-0.5x"></i>
+                <i id="down" class="fa fa-angle-down" onclick="display()"></i>
+                <ul class="first-list">
+                    <li class="selected"><a href="#">Dollar</a></li>
+                    <li><a href="#">Euro</a></li>
+                </ul>
+            </div>
+            <div onmouseover="changeColor3(this)"  onmouseout="changeColor4(this)"
+                 class="languages-block-top">
+                <strong>En</strong>
+                <i id="down" class="fa fa-angle-down" onclick="displayLanguage()"></i>
+                <ul class="first-languages">
+                    <li><a title="English" href="">English</a> </li>
+                    <li><a title="Deutsch" href="">Deutsch</a></li>
+                    <li class="selected"><a title="Russian" href="">Russian</a></li>
+                    <li><a title="Español" href="">Español</a></li>
+                    <li><a title="Français" href="">Français</a></li>
+                </ul>
+            </div>
+            <div onmouseover="changeColor5(this)"  onmouseout="changeColor6(this)"
+                 class="header-login">
+                <a href="#" class="symbol">Sign in</a>
+                <i id="down" class="fa fa-angle-down" onclick="displayForm()"></i>
+                <ul class="content">
+                    <li>
+                        <form class="form">
+                            <div class="form_content">
+                                <div class="form-group">
+                                    <label for="email">E-mail</label>
+                                    <input class="email" type="text" value="" placeholder="E-mail" name="Email"
+                                           data-validate="isEmail" />
+                                </div>
+                                <div class="form-group2">
+                                    <label for="passwd">Password</label>
+                                    <span class="form-error">
+                                        <input class="header-passwd" type="password" autocomplete="off"
+                                               value="" placeholder="Password" name="header-passwd"
+                                               data-validate="isPasswd" />
+                                    </span>
+                                </div>
+                                <p class="submit">
+                                    <button class="btn" name="HeaderSubmitLogin" type="button">
+                                        <i class="fa fa-unlock-alt"></i>
+                                    </button>
+                                </p>
+                                <p>
+                                    <a class="fa fa-user"></a>
+                                </p>
+                                <div class="clearfix">
+                                    <a href="" class="fa fa-facebook">
+                                        Facebook Вход
+                                    </a>
+                                    <a href="" class="fa fa-google">
+                                        Google Вход
+                                    </a>
+                                </div>
+                            </div>
+                        </form>
+                    </li>
+                </ul>
+            </div>
+            <ul class="header_links">
+                <li class="contact">
+                    <a href="Contact.php">Contact</a>
+                </li>
+                <li class="blog">
+                    <a href="Blog.php">Blog</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="main">
+        <div class="container">
+            <div class="row">
+                <div id="header_logo">
+                    <a title="Furniture" href="index.php">
+                        <img class="logo" alt="Furniture" src="img/logo.png" />
+                    </a>
+                </div>
+                <div class="warp_cart">
+                    <div class="shopping_cart">
+                        <a rel="nofollow"
+                           onmouseover="changeClassname(this)"
+                           onmouseout="changeClassname2(this)">
+                            <i class="fa fa-shopping-cart"></i>
+                            <b>Cart:</b>
+                            <span class="product">(empty)</span>
+                            <i class="fa fa-angle-down"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="wrap_tmsearch">
+                    <div id="tmsearch">
+                        <form id="tmsearchbox">
+                            <input id="tm_search_query" class="input" type="text" value="Search"
+                                   name="search_query" autocomplete="off" />
+                            <button class="btn-search" name="tm_submit_search" type="submit">
+                                <i class="fa fa-search"></i>
+                            </button>
+                        </form>
+                    </div>
+                </div>
+                <div class="top_menu">
+                    <div class="stickUpTop">
+                        <div class="stickUpHolder">
+                            <ul class="menu">
+                                <li class="">
+                                    <a class="hvr-shutter-out-vertical" href="Living-Room.php">
+                                        Living Room
+                                        <i class="fa fa-angle-down"></i>
+                                    </a>
+                                    <div class="is-megamenu">
+                                        <div class="col">
+                                            <a class="sf-with-ul" href="">Aliquam congue</a>
+                                            <ul class="content">
+                                                <li class="category">
+                                                    <a href="">Lorem ipsum dolor</a>
+                                                </li>
+                                                <li class="category">
+                                                    <a href="">Sit amet conse</a>
+                                                </li>
+                                                <li class="category">
+                                                    <a href="">Ctetur adipisicing elit</a>
+                                                </li>
+                                                <li class="category">
+                                                    <a href="">Sed do eiusmod</a>
+                                                </li>
+                                                <li class="category">
+                                                    <a href="">Tempor incididunt ut</a>
+                                                </li>
+                                                <li class="category">
+                                                    <a href="">Labore et dolore</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div class="col">
+                                            <a class="sf-with-ul" href="">Pellentesque sed</a>
+                                            <ul class="content">
+                                                <li class="category">
+                                                    <a href="">Lorem ipsum dolor</a>
+                                                </li>
+                                                <li class="category">
+                                                    <a href="">Sit amet conse</a>
+                                                </li>
+                                                <li class="category">
+                                                    <a href="">Ctetur adipisicing elit</a>
+                                                </li>
+                                                <li class="category">
+                                                    <a href="">Sed do eiusmod</a>
+                                                </li>
+                                                <li class="category">
+                                                    <a href="">Tempor incididunt ut</a>
+                                                </li>
+                                                <li class="category">
+                                                    <a href="">Labore et dolore</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div class="col">
+                                            <a class="sf-with-ul" href="">Enim adipiscing</a>
+                                            <ul class="content">
+                                                <li class="category">
+                                                    <a href="">Lorem ipsum dolor</a>
+                                                </li>
+                                                <li class="category">
+                                                    <a href="">Sit amet conse</a>
+                                                </li>
+                                                <li class="category">
+                                                    <a href="">Ctetur adipisicing elit</a>
+                                                </li>
+                                                <li class="category">
+                                                    <a href="">Sed do eiusmod</a>
+                                                </li>
+                                                <li class="category">
+                                                    <a href="">Tempor incididunt ut</a>
+                                                </li>
+                                                <li class="category">
+                                                    <a href="">Labore et dolore</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div class="col-pic">
+                                            <a href="" >
+                                                <img class="img" src="img/menu-baner1.png" />
+                                            </a>
+                                        </div>
+                                        <div class="col-pic2">
+                                            <a href="" >
+                                                <img class="img" src="img/menu-baner2.png" />
+                                            </a>
+                                        </div>
+                                        <div class="col-pic2">
+                                            <a href="" >
+                                                <img class="img" src="img/menu-baner3.png" />
+                                            </a>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class=""><a class="hvr-shutter-out-vertical" href="Dining-Room.php">
+                                    Dining Room
+                                </a> </li>
+                                <li class="new_badge"><a class="hvr-shutter-out-vertical" href="Bedroom.php">
+                                    Bedroom
+                                    <span class="menu_badge">New!</span>
+                                </a> </li>
+                                <li class=""><a class="hvr-shutter-out-vertical" href="Accent-Chairs.php">
+                                    Accent Chairs
+                                </a> </li>
+                                <li class="sale_badge"><a class="hvr-shutter-out-vertical" href="Accessories.php">
+                                    Accessories
+                                    <span class="menu_badge">Sale!</span>
+                                </a> </li>
+                                <li class=""><a class="hvr-shutter-out-vertical" href="Kids-World.php">
+                                    Kids'World
+                                </a> </li>
+                                <li class=""><a class="hvr-shutter-out-vertical" href="Office.php">
+                                    Office
+                                </a> </li>
+                                <li class=""><a class="hvr-shutter-out-vertical" href="Mattresses.php">
+                                    Mattresses
+                                </a> </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div id="gear-right">
+                    <i class="fa fa-cogs icon-2x icon-light"></i>
+                </div>
+                <form method="post" action="">
+                    <div id="tool">
+                        <p>The customization tool allows you to make color and font changes in your theme.</p>
+                        <div class="list-tools">
+                            <p id="theme-title">
+                                THEME COLOR
+                            </p>
+                        </div>
+                        <ul id="color-box">
+                            <li class="theme1">
+                                <div class="color-theme1"></div>
+                                <div class="color-theme2"></div>
+                            </li>
+                            <li class="theme2">
+                                <div class="color-theme1"></div>
+                                <div class="color-theme2"></div>
+                            </li>
+                            <li class="theme3">
+                                <div class="color-theme1"></div>
+                                <div class="color-theme2"></div>
+                            </li>
+                            <li class="theme4">
+                                <div class="color-theme1"></div>
+                                <div class="color-theme2"></div>
+                            </li>
+                        </ul>
+                        <div class="list-tools">
+                            <p id="buttons-title">
+                                NEWSLETTER POP-UP
+                            </p>
+                        </div>
+                        <div class="button-box">
+                            <button id="module">
+                                <span class="bg"></span>
+                                <span class="enable">On</span>
+                                <span class="disable">Off</span>
+                            </button>
+                        </div>
+                        <div class="list-tools">
+                            <p id="buttons-title">
+                                OLARK CHAT
+                            </p>
+                        </div>
+                        <div class="button-box">
+                            <button id="module" onclick="changeBtn()">
+                                <span class="bg"></span>
+                                <span class="enable">On</span>
+                                <span class="disable">Off</span>
+                            </button>
+                        </div>
+                        <div class="btn-tools">
+                            <button id="reset" class="btn-1" type="button">Reset</button>
+                        </div>
+                        <div id="block-advertisement">
+                            <a href="">
+                                <img class="responsive" src="img/advertisement.png" />
+                            </a>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</section>
+<section id="page" class="Living-Room">
+    <div class="columns-container">
+        <div id="columns" class="container">
+            <div class="bread">
+                <a class="home" href=""><i class="fa fa-home"></i></a>
+                <span class="navigation-pipe">&gt;</span>
+                Living Room
+            </div>
+            <div class="row">
+                <div class="large-left">
+                    <div class="row">
+                        <div class="center_column">
+                            <div class="content_scene_cat">
+                                <div class="bg-row">
+                                    <div class="category-image">
+                                        <img class="responsive" src="img/category1.png"/>
+                                    </div>
+                                    <div class="cat_desc">
+                                        <span class="name">Living Room</span>
+                                        <div class="short">
+                                            <p>We are offering you our tremendous choice of different kinds of furniture.
+                                                It is totally safe for your health. It has passed many various tests
+                                                without a single failure. This product has unique design and many
+                                                special options which could indeed help you. You know, nowadays good
+                                                design is a really important thing. Fashion in this case is really i...
+                                            </p>
+                                        </div>
+                                        <!--<div class="full">
+                                            <a class="link_more" href=""
+                                        </div>-->
+                                        <a class="more" href="" title="more">More</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <h1 class="page-heading">
+                                <span class="cat-name">LIVING ROOM</span>
+                                <span class="heading-counter">
+                                    <span class="heading-counter">There are 19 products.</span>
+                                </span>
+                            </h1>
+                            <div id="sub-categories">
+                                <p class="sub-heading">Subcategories</p>
+                                <ul class="clear">
+                                    <li>
+                                        <div class="sub-image">
+                                            <a class="img" href=""><img src="img/p1.png"/> </a>
+                                        </div>
+                                        <h5>
+                                            <a class="name" href="">ALIQUAM CONGUE</a>
+                                        </h5>
+                                    </li>
+                                    <li>
+                                        <div class="sub-image">
+                                            <a class="img" href=""><img src="img/p2.png"/> </a>
+                                        </div>
+                                        <h5>
+                                            <a class="name" href="">PELLENTESQUE SED</a>
+                                        </h5>
+                                    </li>
+                                    <li>
+                                        <div class="sub-image">
+                                            <a class="img" href=""><img src="img/p3.png"/> </a>
+                                        </div>
+                                        <h5>
+                                            <a class="name" href="">ENIM ADIPISCING</a>
+                                        </h5>
+                                    </li>
+                                    <li>
+                                        <div class="sub-image">
+                                            <a class="img" href=""><img src="img/p4.png"/> </a>
+                                        </div>
+                                        <h5>
+                                            <a class="name" href="">ALIQUAM SITAMET</a>
+                                        </h5>
+                                    </li>
+                                    <li>
+                                        <div class="sub-image">
+                                            <a class="img" href=""><img src="img/p5.png"/> </a>
+                                        </div>
+                                        <h5>
+                                            <a class="name" href="">PHASELLUS</a>
+                                        </h5>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="content_sort">
+                                <div class="sort">
+                                    <ul class="display">
+                                        <li class="display-title">View:</li>
+                                        <li id="grid" class="selected">
+                                            <a rel="nofollow"  title="Grid" onclick="changeToGrid()">
+                                                <i class="fa fa-th-large"></i>
+                                                Grid
+                                            </a>
+                                        </li>
+                                        <li id="list">
+                                            <a rel="nofollow"  title="List" onclick="changeToList()">
+                                                <i class="fa fa-th-list"></i>
+                                                List
+                                            </a>
+                                        </li>
+                                    </ul>
+                                    <form id="productsSortForm" class="productsSortForm">
+                                        <div class="select">
+                                            <label for="selectProductSort">Sort by</label>
+                                            <div id="uniform" class="selecter">
+                                                <span></span>
+                                                <select id="selectProductSort" class="form-control">
+                                                    <option value="position:asc" selected="selected">--</option>
+                                                    <option value="price:asc">Price: Lowest first</option>
+                                                    <option value="price:desc">Price: Highest first</option>
+                                                    <option value="name:asc">Product name:A to Z</option>
+                                                    <option value="name:desc">Product name:Z to A</option>
+                                                    <option value="quantity:desc">In stock</option>
+                                                    <option value="reference:asc">Reference: Lowest first</option>
+                                                    <option value="reference:desc">Reference: Highest first</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                    </form>
+                                    <form class="itemPage">
+                                        <div class="selector1">
+                                            <label for="nb_item">Show</label>
+                                            <input name="id_lang" value="1" type="hidden"/>
+                                            <input name="id_category" value="3" type="hidden"/>
+                                            <input name="controller" value="category" type="hidden"/>
+                                            <div id="uniform-nb_item" class="selector">
+                                                <span></span>
+                                                <select id="nb_item" class="form-control" name="n">
+                                                    <option value="9" selected="selected">9</option>
+                                                    <option value="18">18</option>
+                                                    <option value="45">45</option>
+                                                </select>
+                                            </div>
+                                            <span>per page</span>
+                                        </div>
+                                    </form>
+                                </div>
+                                <div class="top-content">
+                                    <form class="compare-form" method="post">
+                                        <button class="btn" type="submit">
+                                            <span>
+                                                Compare(<strong class="total-compare-val">0</strong>)
+                                                <i class="fa fa-angle-right"></i>
+                                            </span>
+                                        </button>
+                                    </form>
+                                    <div id="pagination" class="pagination clearfix">
+                                        <form class="showall">
+                                            <div>
+                                                <button class="btn-default" type="submit">
+                                                    <span>Show all</span>
+                                                </button>
+                                            </div>
+                                        </form>
+                                        <ul class="pagination">
+                                            <li id="pagination_previous">
+                                                <span>
+                                                    <i class="fa fa-chevron-left"></i>
+                                                    <b>Previous</b>
+                                                </span>
+                                            </li>
+                                            <li class="active current">
+                                                <span><span>1</span></span>
+                                            </li>
+                                            <li>
+                                                <a href="">
+                                                    <span>2</span>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="">
+                                                    <span>3</span>
+                                                </a>
+                                            </li>
+                                            <li id="pagination_next">
+                                                <a href="">
+                                                    <b>Next</b>
+                                                    <i class="fa fa-chevron-right"></i>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="product-count">Showing 1 - 9 of 19 items</div>
+                                </div>
+                            </div>
+                            <ul class="product_list">
+                                <li class="block">
+                                    <div class="product-container">
+                                        <div class="left-block">
+                                            <div class="product-image-container">
+                                                <a class="product_img_link" href="#" onmouseover="tra()"
+                                                   onmouseout="tra2()">
+                                                    <img class="replace" src="img/r1.png"/>
+                                                    <img class="replace1" src="img/r2.png"/>
+                                                </a>
+                                                <a class="quick-view" href="#">
+                                                    <span>Quick view</span>
+                                                </a>
+                                                <a class="new-box" href="#">
+                                                    <span class="new-label">New</span>
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <div class="right-block">
+                                            <h5 itemprop="name">
+                                                <a class="product-name" href="">
+                                                    <span class="grid-name">Boardwalk</span>
+                                                </a>
+                                            </h5>
+                                            <p class="product-desc"></p>
+                                            <div class="content_price">
+                                                <span class="product-price">$177.51</span>
+                                            </div>
+                                            <div class="button-container">
+                                                <a class="add-to-cart" href="#">
+                                                    <i class="fa fa-shopping-cart"></i>
+                                                    <span>Add to cart</span>
+                                                </a>
+                                                <a class="lnk_view" href="#">
+                                                    <i class="fa fa-info-circle"></i>
+                                                    <span>More</span>
+                                                </a>
+                                            </div>
+                                            <div class="color-list-container"></div>
+                                            <div class="product-flags"></div>
+                                            <span class="availability">
+                                                <span class="now">In Stock</span>
+                                            </span>
+                                        </div>
+                                        <div class="functional-buttons">
+                                            <div class="wishlist">
+                                                <a class="addToWishlist" href="#">
+                                                    <i class="fa fa-heart-o"></i>
+                                                    Add to Wishlist
+                                                </a>
+                                            </div>
+                                            <div class="compare">
+                                                <a class="add_to_compare" href="#">
+                                                    <i class="fa fa-plus"></i>
+                                                    Add to Compare
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="block">
+                                    <div class="product-container">
+                                        <div class="left-block">
+                                            <div class="product-image-container">
+                                                <a class="product_img_link" href="#" onmouseover="tra1()"
+                                                   onmouseout="tra21()">
+                                                    <img class="replace" src="img/r3.png"/>
+                                                    <img class="replace1" src="img/r4.png"/>
+                                                </a>
+                                                <a class="quick-view" href="#">
+                                                    <span>Quick view</span>
+                                                </a>
+                                                <a class="new-box" href="#">
+                                                    <span class="new-label">New</span>
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <div class="right-block">
+                                            <h5 itemprop="name">
+                                                <a class="product-name" href="">
+                                                    <span class="grid-name">Brighton Storage Bench</span>
+                                                </a>
+                                            </h5>
+                                            <p class="product-desc"></p>
+                                            <div class="content_price">
+                                                <span class="product-price">$220.96</span>
+                                            </div>
+                                            <div class="button-container">
+                                                <a class="add-to-cart" href="#">
+                                                    <i class="fa fa-shopping-cart"></i>
+                                                    <span>Add to cart</span>
+                                                </a>
+                                                <a class="lnk_view" href="#">
+                                                    <i class="fa fa-info-circle"></i>
+                                                    <span>More</span>
+                                                </a>
+                                            </div>
+                                            <div class="color-list-container"></div>
+                                            <div class="product-flags"></div>
+                                            <span class="availability">
+                                                <span class="now">In Stock</span>
+                                            </span>
+                                        </div>
+                                        <div class="functional-buttons">
+                                            <div class="wishlist">
+                                                <a class="addToWishlist" href="#">
+                                                    <i class="fa fa-heart-o"></i>
+                                                    Add to Wishlist
+                                                </a>
+                                            </div>
+                                            <div class="compare">
+                                                <a class="add_to_compare" href="#">
+                                                    <i class="fa fa-plus"></i>
+                                                    Add to Compare
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="block">
+                                    <div class="product-container">
+                                        <div class="left-block">
+                                            <div class="product-image-container">
+                                                <a class="product_img_link" href="#" onmouseover="tra_3()"
+                                                   onmouseout="tra23()">
+                                                    <img class="replace" src="img/r5.png"/>
+                                                    <img class="replace1" src="img/r6.png"/>
+                                                </a>
+                                                <a class="quick-view" href="#">
+                                                    <span>Quick view</span>
+                                                </a>
+                                                <a class="new-box" href="#">
+                                                    <span class="new-label">New</span>
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <div class="right-block">
+                                            <h5 itemprop="name">
+                                                <a class="product-name" href="">
+                                                    <span class="grid-name">Ikea, BIRKELAND</span>
+                                                </a>
+                                            </h5>
+                                            <p class="product-desc"></p>
+                                            <div class="content_price">
+                                                <span class="product-price">$296.51</span>
+                                            </div>
+                                            <div class="button-container">
+                                                <a class="add-to-cart" href="#">
+                                                    <i class="fa fa-shopping-cart"></i>
+                                                    <span>Add to cart</span>
+                                                </a>
+                                                <a class="lnk_view" href="#">
+                                                    <i class="fa fa-info-circle"></i>
+                                                    <span>More</span>
+                                                </a>
+                                            </div>
+                                            <div class="color-list-container"></div>
+                                            <div class="product-flags"></div>
+                                            <span class="availability">
+                                                <span class="now">In Stock</span>
+                                            </span>
+                                        </div>
+                                        <div class="functional-buttons">
+                                            <div class="wishlist">
+                                                <a class="addToWishlist" href="#">
+                                                    <i class="fa fa-heart-o"></i>
+                                                    Add to Wishlist
+                                                </a>
+                                            </div>
+                                            <div class="compare">
+                                                <a class="add_to_compare" href="#">
+                                                    <i class="fa fa-plus"></i>
+                                                    Add to Compare
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+
+                                <li class="block">
+                                    <div class="product-container">
+                                        <div class="left-block">
+                                            <div class="product-image-container">
+                                                <a class="product_img_link" href="#" onmouseover="tra_4()"
+                                                   onmouseout="tra24()">
+                                                    <img class="replace" src="img/r7.png"/>
+                                                    <img class="replace1" src="img/r8.png"/>
+                                                </a>
+                                                <a class="quick-view" href="#">
+                                                    <span>Quick view</span>
+                                                </a>
+                                                <a class="new-box" href="#">
+                                                    <span class="new-label">New</span>
+                                                </a>
+                                                <a class="sale-box" href="#">
+                                                    <span class="sale-label">Sale!</span>
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <div class="right-block">
+                                            <h5 itemprop="name">
+                                                <a class="product-name" href="">
+                                                    <span class="grid-name">Ginger Loft</span>
+                                                </a>
+                                            </h5>
+                                            <p class="product-desc"></p>
+                                            <div class="content_price">
+                                                <span class="product-price">$288.60</span>
+                                            </div>
+                                            <div class="button-container">
+                                                <a class="add-to-cart" href="#">
+                                                    <i class="fa fa-shopping-cart"></i>
+                                                    <span>Add to cart</span>
+                                                </a>
+                                                <a class="lnk_view" href="#">
+                                                    <i class="fa fa-info-circle"></i>
+                                                    <span>More</span>
+                                                </a>
+                                            </div>
+                                            <div class="color-list-container"></div>
+                                            <div class="product-flags"></div>
+                                            <span class="availability">
+                                                <span class="now" id="now1">In Stock</span>
+                                            </span>
+                                        </div>
+                                        <div class="functional-buttons">
+                                            <div class="wishlist">
+                                                <a class="addToWishlist" href="#">
+                                                    <i class="fa fa-heart-o"></i>
+                                                    Add to Wishlist
+                                                </a>
+                                            </div>
+                                            <div class="compare">
+                                                <a class="add_to_compare" href="#">
+                                                    <i class="fa fa-plus"></i>
+                                                    Add to Compare
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="block">
+                                    <div class="product-container">
+                                        <div class="left-block">
+                                            <div class="product-image-container">
+                                                <a class="product_img_link" href="#" onmouseover="tra_5()"
+                                                   onmouseout="tra25()">
+                                                    <img class="replace" src="img/r9.png"/>
+                                                    <img class="replace1" src="img/r10.png"/>
+                                                </a>
+                                                <a class="quick-view" href="#">
+                                                    <span>Quick view</span>
+                                                </a>
+                                                <a class="new-box" href="#">
+                                                    <span class="new-label">New</span>
+                                                </a>
+                                                <a class="sale-box" href="#">
+                                                    <span class="sale-label">Sale!</span>
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <div class="right-block">
+                                            <h5 itemprop="name">
+                                                <a class="product-name" href="">
+                                                    <span class="grid-name">HOME Bradstreet Marzipan Renu Chair</span>
+                                                </a>
+                                            </h5>
+                                            <p class="product-desc"></p>
+                                            <div class="content_price">
+                                                <span class="product-price">$156.82</span>
+                                            </div>
+                                            <div class="button-container">
+                                                <a class="add-to-cart" href="#">
+                                                    <i class="fa fa-shopping-cart"></i>
+                                                    <span>Add to cart</span>
+                                                </a>
+                                                <a class="lnk_view" href="#">
+                                                    <i class="fa fa-info-circle"></i>
+                                                    <span>More</span>
+                                                </a>
+                                            </div>
+                                            <div class="color-list-container"></div>
+                                            <div class="product-flags"></div>
+                                            <span class="availability">
+                                                <span class="now">In Stock</span>
+                                            </span>
+                                        </div>
+                                        <div class="functional-buttons">
+                                            <div class="wishlist">
+                                                <a class="addToWishlist" href="#">
+                                                    <i class="fa fa-heart-o"></i>
+                                                    Add to Wishlist
+                                                </a>
+                                            </div>
+                                            <div class="compare">
+                                                <a class="add_to_compare" href="#">
+                                                    <i class="fa fa-plus"></i>
+                                                    Add to Compare
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="block">
+                                    <div class="product-container">
+                                        <div class="left-block">
+                                            <div class="product-image-container">
+                                                <a class="product_img_link" href="#" onmouseover="tra_6()"
+                                                   onmouseout="tra26()">
+                                                    <img class="replace" src="img/r11.png"/>
+                                                    <img class="replace1" src="img/r12.png"/>
+                                                </a>
+                                                <a class="quick-view" href="#">
+                                                    <span>Quick view</span>
+                                                </a>
+                                                <a class="new-box" href="#">
+                                                    <span class="new-label">New</span>
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <div class="right-block">
+                                            <h5 itemprop="name">
+                                                <a class="product-name" href="">
+                                                    <span class="grid-name">Ikea,FRODE</span>
+                                                </a>
+                                            </h5>
+                                            <p class="product-desc"></p>
+                                            <div class="content_price">
+                                                <span class="product-price">$192.15</span>
+                                            </div>
+                                            <div class="button-container">
+                                                <a class="add-to-cart" href="#">
+                                                    <i class="fa fa-shopping-cart"></i>
+                                                    <span>Add to cart</span>
+                                                </a>
+                                                <a class="lnk_view" href="#">
+                                                    <i class="fa fa-info-circle"></i>
+                                                    <span>More</span>
+                                                </a>
+                                            </div>
+                                            <div class="color-list-container"></div>
+                                            <div class="product-flags"></div>
+                                            <span class="availability">
+                                                <span class="now">In Stock</span>
+                                            </span>
+                                        </div>
+                                        <div class="functional-buttons">
+                                            <div class="wishlist">
+                                                <a class="addToWishlist" href="#">
+                                                    <i class="fa fa-heart-o"></i>
+                                                    Add to Wishlist
+                                                </a>
+                                            </div>
+                                            <div class="compare">
+                                                <a class="add_to_compare" href="#">
+                                                    <i class="fa fa-plus"></i>
+                                                    Add to Compare
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+
+                                <li class="block">
+                                    <div class="product-container">
+                                        <div class="left-block">
+                                            <div class="product-image-container">
+                                                <a class="product_img_link" href="#" onmouseover="tra_7()"
+                                                   onmouseout="tra27()">
+                                                    <img class="replace" src="img/r13.png"/>
+                                                    <img class="replace1" src="img/r14.png"/>
+                                                </a>
+                                                <a class="quick-view" href="#">
+                                                    <span>Quick view</span>
+                                                </a>
+                                                <a class="new-box" href="#">
+                                                    <span class="new-label">New</span>
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <div class="right-block">
+                                            <h5 itemprop="name">
+                                                <a class="product-name" href="">
+                                                    <span class="grid-name">Home Styles Large Wood Server Kitchen Island</span>
+                                                </a>
+                                            </h5>
+                                            <p class="product-desc"></p>
+                                            <div class="content_price">
+                                                <span class="product-price">$320.28</span>
+                                            </div>
+                                            <div class="button-container">
+                                                <a class="add-to-cart" href="#">
+                                                    <i class="fa fa-shopping-cart"></i>
+                                                    <span>Add to cart</span>
+                                                </a>
+                                                <a class="lnk_view" href="#">
+                                                    <i class="fa fa-info-circle"></i>
+                                                    <span>More</span>
+                                                </a>
+                                            </div>
+                                            <div class="color-list-container"></div>
+                                            <div class="product-flags"></div>
+                                            <span class="availability">
+                                                <span class="now">In Stock</span>
+                                            </span>
+                                        </div>
+                                        <div class="functional-buttons">
+                                            <div class="wishlist">
+                                                <a class="addToWishlist" href="#">
+                                                    <i class="fa fa-heart-o"></i>
+                                                    Add to Wishlist
+                                                </a>
+                                            </div>
+                                            <div class="compare">
+                                                <a class="add_to_compare" href="#">
+                                                    <i class="fa fa-plus"></i>
+                                                    Add to Compare
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="block">
+                                    <div class="product-container">
+                                        <div class="left-block">
+                                            <div class="product-image-container">
+                                                <a class="product_img_link" href="#" onmouseover="tra_8()"
+                                                   onmouseout="tra28()">
+                                                    <img class="replace" src="img/r15.png"/>
+                                                    <img class="replace1" src="img/r16.png"/>
+                                                </a>
+                                                <a class="quick-view" href="#">
+                                                    <span>Quick view</span>
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <div class="right-block">
+                                            <h5 itemprop="name">
+                                                <a class="product-name" href="">
+                                                    <span class="grid-name">Ikea, HEMNES</span>
+                                                </a>
+                                            </h5>
+                                            <p class="product-desc"></p>
+                                            <div class="content_price">
+                                                <span class="product-price">$270.25</span>
+                                            </div>
+                                            <div class="button-container">
+                                                <a class="add-to-cart" href="#">
+                                                    <i class="fa fa-shopping-cart"></i>
+                                                    <span>Add to cart</span>
+                                                </a>
+                                                <a class="lnk_view" href="#">
+                                                    <i class="fa fa-info-circle"></i>
+                                                    <span>More</span>
+                                                </a>
+                                            </div>
+                                            <div class="color-list-container"></div>
+                                            <div class="product-flags"></div>
+                                            <span class="availability">
+                                                <span class="now">In Stock</span>
+                                            </span>
+                                        </div>
+                                        <div class="functional-buttons">
+                                            <div class="wishlist">
+                                                <a class="addToWishlist" href="#">
+                                                    <i class="fa fa-heart-o"></i>
+                                                    Add to Wishlist
+                                                </a>
+                                            </div>
+                                            <div class="compare">
+                                                <a class="add_to_compare" href="#">
+                                                    <i class="fa fa-plus"></i>
+                                                    Add to Compare
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="block">
+                                    <div class="product-container">
+                                        <div class="left-block">
+                                            <div class="product-image-container">
+                                                <a class="product_img_link" href="#" onmouseover="tra_9()"
+                                                   onmouseout="tra29()">
+                                                    <img class="replace" src="img/r17.png"/>
+                                                    <img class="replace1" src="img/r18.png"/>
+                                                </a>
+                                                <a class="quick-view" href="#">
+                                                    <span>Quick view</span>
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <div class="right-block">
+                                            <h5 itemprop="name">
+                                                <a class="product-name" href="">
+                                                    <span class="grid-name">Ikea, LEIRVIK</span>
+                                                </a>
+                                            </h5>
+                                            <p class="product-desc"></p>
+                                            <div class="content_price">
+                                                <span class="product-price">$196.51</span>
+                                            </div>
+                                            <div class="button-container">
+                                                <a class="add-to-cart" href="#">
+                                                    <i class="fa fa-shopping-cart"></i>
+                                                    <span>Add to cart</span>
+                                                </a>
+                                                <a class="lnk_view" href="#">
+                                                    <i class="fa fa-info-circle"></i>
+                                                    <span>More</span>
+                                                </a>
+                                            </div>
+                                            <div class="color-list-container"></div>
+                                            <div class="product-flags"></div>
+                                            <span class="availability">
+                                                <span class="now">In Stock</span>
+                                            </span>
+                                        </div>
+                                        <div class="functional-buttons">
+                                            <div class="wishlist">
+                                                <a class="addToWishlist" href="#">
+                                                    <i class="fa fa-heart-o"></i>
+                                                    Add to Wishlist
+                                                </a>
+                                            </div>
+                                            <div class="compare">
+                                                <a class="add_to_compare" href="#">
+                                                    <i class="fa fa-plus"></i>
+                                                    Add to Compare
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                            <ul class="grid">
+                                <li>
+                                    <div class="product-container">
+                                        <div class="row">
+                                            <div class="left-block">
+                                                <div class="product-image-container">
+                                                    <a class="product_img_link" href="#" onmouseover="tra()"
+                                                       onmouseout="tra2()">
+                                                        <img class="replace" src="img/r1.png"/>
+                                                        <img class="replace1" src="img/r2.png"/>
+                                                    </a>
+                                                    <a class="quick-view" href="#">
+                                                        <span>Quick view</span>
+                                                    </a>
+                                                    <a class="new-box" href="#">
+                                                        <span class="new-label">New</span>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                            <div class="center-block">
+                                                <div class="product-flags"></div>
+                                                <h5 itemprop="name">
+                                                    <a class="product-name" href="#">
+                                                        <span class="list-name">Boardwalk</span>
+                                                    </a>
+                                                </h5>
+                                                <p class="product-desc">
+                                                        <span class="list-desc">
+                                                            From ancient times people always wanted to find a harmony.
+                                                            Greek philosophers stated that harmony is the basic element
+                                                            of a nature, and everything that surrounds us is in harmony,
+                                                            however mankind still can’t find a way to reach this
+                                                            condition. So, obviously we must start making our lives
+                                                            more harmonious. We spend a great amount of time of our
+                                                            life at our...
+                                                        </span>
+                                                </p>
+                                                <div class="color-list-container"></div>
+                                                    <span class="availability">
+                                                        <span class="availability-now">In Stock</span>
+                                                    </span>
+                                            </div>
+                                            <div class="right-block">
+                                                <div class="right-block-content">
+                                                    <div class="content_price">
+                                                        <span class="price">$156.82</span>
+
+                                                    </div>
+                                                    <div class="button-container">
+                                                        <a class="add-to-cart" href="#">
+                                                            <i class="fa fa-shopping-cart"></i>
+                                                            <span>Add to cart</span>
+                                                        </a>
+                                                        <a class="more" href="#">
+                                                            <span>More</span>
+                                                        </a>
+                                                    </div>
+                                                    <div class="functional-buttons">
+                                                        <div class="wishlist">
+                                                            <a class="addToWishlist" href="#">
+                                                                <i class="fa fa-heart-o"></i>
+                                                                Add to Wishlist
+                                                            </a>
+                                                        </div>
+                                                        <div class="compare">
+                                                            <a class="add_to_compare" href="#">
+                                                                <i class="fa fa-plus"></i>
+                                                                Add to Compare
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="product-container">
+                                        <div class="row">
+                                            <div class="left-block">
+                                                <div class="product-image-container">
+                                                    <a class="product_img_link" href="#" onmouseover="tra1()"
+                                                       onmouseout="tra21()">
+                                                        <img class="replace" src="img/r3.png"/>
+                                                        <img class="replace1" src="img/r4.png"/>
+                                                    </a>
+                                                    <a class="quick-view" href="#">
+                                                        <span>Quick view</span>
+                                                    </a>
+                                                    <a class="new-box" href="#">
+                                                        <span class="new-label">New</span>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                            <div class="center-block">
+                                                <div class="product-flags"></div>
+                                                <h5 itemprop="name">
+                                                    <a class="product-name" href="#">
+                                                        <span class="list-name">Boardwalk</span>
+                                                    </a>
+                                                </h5>
+                                                <div class="comments_note">
+                                                    <div class="star_content">
+                                                        <div class="star"><i class="fa fa-star"></i></div>
+                                                        <div class="star"><i class="fa fa-star"></i></div>
+                                                        <div class="star"><i class="fa fa-star"></i></div>
+                                                        <div class="star"><i class="fa fa-star"></i></div>
+                                                        <div class="star star0"><i class="fa fa-star-o"></i></div>
+                                                    </div>
+                                                        <span class="nb_comments">
+                                                            <span>1</span>
+                                                            Review(s)
+                                                        </span>
+                                                </div>
+                                                <p class="product-desc">
+                                                        <span class="list-desc">
+                                                            From ancient times people always wanted to find a harmony.
+                                                            Greek philosophers stated that harmony is the basic element
+                                                            of a nature, and everything that surrounds us is in harmony,
+                                                            however mankind still can’t find a way to reach this
+                                                            condition. So, obviously we must start making our lives
+                                                            more harmonious. We spend a great amount of time of our
+                                                            life at our...
+                                                        </span>
+                                                </p>
+                                                <div class="color-list-container"></div>
+                                                    <span class="availability">
+                                                        <span class="availability-now">In Stock</span>
+                                                    </span>
+                                            </div>
+                                            <div class="right-block">
+                                                <div class="right-block-content">
+                                                    <div class="content_price">
+                                                        <span class="price">$156.82</span>
+                                                        <span class="old-price">$180.25</span>
+                                                        <span class="percent">-13%</span>
+                                                    </div>
+                                                    <div class="button-container">
+                                                        <a class="add-to-cart" href="#">
+                                                            <i class="fa fa-shopping-cart"></i>
+                                                            <span>Add to cart</span>
+                                                        </a>
+                                                        <a class="more" href="#">
+                                                            <span>More</span>
+                                                        </a>
+                                                    </div>
+                                                    <div class="functional-buttons">
+                                                        <div class="wishlist">
+                                                            <a class="addToWishlist" href="#">
+                                                                <i class="fa fa-heart-o"></i>
+                                                                Add to Wishlist
+                                                            </a>
+                                                        </div>
+                                                        <div class="compare">
+                                                            <a class="add_to_compare" href="#">
+                                                                <i class="fa fa-plus"></i>
+                                                                Add to Compare
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="product-container">
+                                        <div class="row">
+                                            <div class="left-block">
+                                                <div class="product-image-container">
+                                                    <a class="product_img_link" href="#" onmouseover="tra_3()"
+                                                       onmouseout="tra23()">
+                                                        <img class="replace" src="img/r5.png"/>
+                                                        <img class="replace1" src="img/r6.png"/>
+                                                    </a>
+                                                    <a class="quick-view" href="#">
+                                                        <span>Quick view</span>
+                                                    </a>
+                                                    <a class="new-box" href="#">
+                                                        <span class="new-label">New</span>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                            <div class="center-block">
+                                                <div class="product-flags"></div>
+                                                <h5 itemprop="name">
+                                                    <a class="product-name" href="#">
+                                                        <span class="list-name">Boardwalk</span>
+                                                    </a>
+                                                </h5>
+                                                <p class="product-desc">
+                                                        <span class="list-desc">
+                                                            From ancient times people always wanted to find a harmony.
+                                                            Greek philosophers stated that harmony is the basic element
+                                                            of a nature, and everything that surrounds us is in harmony,
+                                                            however mankind still can’t find a way to reach this
+                                                            condition. So, obviously we must start making our lives
+                                                            more harmonious. We spend a great amount of time of our
+                                                            life at our...
+                                                        </span>
+                                                </p>
+                                                <div class="color-list-container"></div>
+                                                    <span class="availability">
+                                                        <span class="availability-now">In Stock</span>
+                                                    </span>
+                                            </div>
+                                            <div class="right-block">
+                                                <div class="right-block-content">
+                                                    <div class="content_price">
+                                                        <span class="price">$156.82</span>
+                                                        <span class="old-price">$180.25</span>
+                                                        <span class="percent">-13%</span>
+                                                    </div>
+                                                    <div class="button-container">
+                                                        <a class="add-to-cart" href="#">
+                                                            <i class="fa fa-shopping-cart"></i>
+                                                            <span>Add to cart</span>
+                                                        </a>
+                                                        <a class="more" href="#">
+                                                            <span>More</span>
+                                                        </a>
+                                                    </div>
+                                                    <div class="functional-buttons">
+                                                        <div class="wishlist">
+                                                            <a class="addToWishlist" href="#">
+                                                                <i class="fa fa-heart-o"></i>
+                                                                Add to Wishlist
+                                                            </a>
+                                                        </div>
+                                                        <div class="compare">
+                                                            <a class="add_to_compare" href="#">
+                                                                <i class="fa fa-plus"></i>
+                                                                Add to Compare
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="product-container">
+                                        <div class="row">
+                                            <div class="left-block">
+                                                <div class="product-image-container">
+                                                    <a class="product_img_link" href="#" onmouseover="tra_4()"
+                                                       onmouseout="tra24()">
+                                                        <img class="replace" src="img/r7.png"/>
+                                                        <img class="replace1" src="img/r8.png"/>
+                                                    </a>
+                                                    <a class="quick-view" href="#">
+                                                        <span>Quick view</span>
+                                                    </a>
+                                                    <a class="new-box" href="#">
+                                                        <span class="new-label">New</span>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                            <div class="center-block">
+                                                <div class="product-flags"></div>
+                                                <h5 itemprop="name">
+                                                    <a class="product-name" href="#">
+                                                        <span class="list-name">Boardwalk</span>
+                                                    </a>
+                                                </h5>
+                                                <p class="product-desc">
+                                                        <span class="list-desc">
+                                                            From ancient times people always wanted to find a harmony.
+                                                            Greek philosophers stated that harmony is the basic element
+                                                            of a nature, and everything that surrounds us is in harmony,
+                                                            however mankind still can’t find a way to reach this
+                                                            condition. So, obviously we must start making our lives
+                                                            more harmonious. We spend a great amount of time of our
+                                                            life at our...
+                                                        </span>
+                                                </p>
+                                                <div class="color-list-container"></div>
+                                                    <span class="availability">
+                                                        <span class="availability-now">In Stock</span>
+                                                    </span>
+                                            </div>
+                                            <div class="right-block">
+                                                <div class="right-block-content">
+                                                    <div class="content_price">
+                                                        <span class="price">$156.82</span>
+                                                        <span class="old-price">$180.25</span>
+                                                        <span class="percent">-13%</span>
+                                                    </div>
+                                                    <div class="button-container">
+                                                        <a class="add-to-cart" href="#">
+                                                            <i class="fa fa-shopping-cart"></i>
+                                                            <span>Add to cart</span>
+                                                        </a>
+                                                        <a class="more" href="#">
+                                                            <span>More</span>
+                                                        </a>
+                                                    </div>
+                                                    <div class="functional-buttons">
+                                                        <div class="wishlist">
+                                                            <a class="addToWishlist" href="#">
+                                                                <i class="fa fa-heart-o"></i>
+                                                                Add to Wishlist
+                                                            </a>
+                                                        </div>
+                                                        <div class="compare">
+                                                            <a class="add_to_compare" href="#">
+                                                                <i class="fa fa-plus"></i>
+                                                                Add to Compare
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="product-container">
+                                        <div class="row">
+                                            <div class="left-block">
+                                                <div class="product-image-container">
+                                                    <a class="product_img_link" href="#" onmouseover="tra_5()"
+                                                       onmouseout="tra25()">
+                                                        <img class="replace" src="img/r9.png"/>
+                                                        <img class="replace1" src="img/r10.png"/>
+                                                    </a>
+                                                    <a class="quick-view" href="#">
+                                                        <span>Quick view</span>
+                                                    </a>
+                                                    <a class="new-box" href="#">
+                                                        <span class="new-label">New</span>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                            <div class="center-block">
+                                                <div class="product-flags"></div>
+                                                <h5 itemprop="name">
+                                                    <a class="product-name" href="#">
+                                                            <span class="list-name">HOME Bradstreet Marzipan Cream
+                                                                Renu Chair</span>
+                                                    </a>
+                                                </h5>
+                                                <div class="comments_note">
+                                                    <div class="star_content">
+                                                        <div class="star"><i class="fa fa-star"></i></div>
+                                                        <div class="star"><i class="fa fa-star"></i></div>
+                                                        <div class="star"><i class="fa fa-star"></i></div>
+                                                        <div class="star"><i class="fa fa-star"></i></div>
+                                                        <div class="star star0"><i class="fa fa-star-o"></i></div>
+                                                    </div>
+                                                        <span class="nb_comments">
+                                                            <span>1</span>
+                                                            Review(s)
+                                                        </span>
+                                                </div>
+                                                <p class="product-desc">
+                                                        <span class="list-desc">
+                                                            From ancient times people always wanted to find a harmony.
+                                                            Greek philosophers stated that harmony is the basic element
+                                                            of a nature, and everything that surrounds us is in harmony,
+                                                            however mankind still can’t find a way to reach this
+                                                            condition. So, obviously we must start making our lives
+                                                            more harmonious. We spend a great amount of time of our
+                                                            life at our...
+                                                        </span>
+                                                </p>
+                                                <div class="color-list-container"></div>
+                                                    <span class="availability">
+                                                        <span class="availability-now">In Stock</span>
+                                                    </span>
+                                            </div>
+                                            <div class="right-block">
+                                                <div class="right-block-content">
+                                                    <div class="content_price">
+                                                        <span class="price">$156.82</span>
+                                                        <span class="old-price">$180.25</span>
+                                                        <span class="percent">-13%</span>
+                                                    </div>
+                                                    <div class="button-container">
+                                                        <a class="add-to-cart" href="#">
+                                                            <i class="fa fa-shopping-cart"></i>
+                                                            <span>Add to cart</span>
+                                                        </a>
+                                                        <a class="more" href="#">
+                                                            <span>More</span>
+                                                        </a>
+                                                    </div>
+                                                    <div class="functional-buttons">
+                                                        <div class="wishlist">
+                                                            <a class="addToWishlist" href="#">
+                                                                <i class="fa fa-heart-o"></i>
+                                                                Add to Wishlist
+                                                            </a>
+                                                        </div>
+                                                        <div class="compare">
+                                                            <a class="add_to_compare" href="#">
+                                                                <i class="fa fa-plus"></i>
+                                                                Add to Compare
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                            <div class="content_sort" id="content_sort-2">
+                                <div class="sort">
+                                    <ul class="display">
+                                        <li class="display-title">View:</li>
+                                        <li id="grid" class="selected">
+                                            <a rel="nofollow" href="#" title="Grid">
+                                                <i class="fa fa-th-large"></i>
+                                                Grid
+                                            </a>
+                                        </li>
+                                        <li id="list">
+                                            <a rel="nofollow" href="#" title="List">
+                                                <i class="fa fa-th-list"></i>
+                                                List
+                                            </a>
+                                        </li>
+                                    </ul>
+                                    <form id="productsSortForm" class="productsSortForm">
+                                        <div class="select">
+                                            <label for="selectProductSort">Sort by</label>
+                                            <div id="uniform" class="selecter">
+                                                <span></span>
+                                                <select id="selectProductSort" class="form-control">
+                                                    <option value="position:asc" selected="selected">--</option>
+                                                    <option value="price:asc">Price: Lowest first</option>
+                                                    <option value="price:desc">Price: Highest first</option>
+                                                    <option value="name:asc">Product name:A to Z</option>
+                                                    <option value="name:desc">Product name:Z to A</option>
+                                                    <option value="quantity:desc">In stock</option>
+                                                    <option value="reference:asc">Reference: Lowest first</option>
+                                                    <option value="reference:desc">Reference: Highest first</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                    </form>
+                                    <form class="itemPage">
+                                        <div class="selector1">
+                                            <label for="nb_item">Show</label>
+                                            <input name="id_lang" value="1" type="hidden"/>
+                                            <input name="id_category" value="3" type="hidden"/>
+                                            <input name="controller" value="category" type="hidden"/>
+                                            <div id="uniform-nb_item" class="selector">
+                                                <span></span>
+                                                <select id="nb_item" class="form-control" name="n">
+                                                    <option value="9" selected="selected">9</option>
+                                                    <option value="18">18</option>
+                                                    <option value="45">45</option>
+                                                </select>
+                                            </div>
+                                            <span>per page</span>
+                                        </div>
+                                    </form>
+                                </div>
+                                <div class="top-content">
+                                    <form class="compare-form" method="post">
+                                        <button class="btn" type="submit">
+                                            <span>
+                                                Compare(<strong class="total-compare-val">0</strong>)
+                                                <i class="fa fa-angle-right"></i>
+                                            </span>
+                                        </button>
+                                    </form>
+                                    <div id="pagination" class="pagination clearfix">
+                                        <form class="showall">
+                                            <div>
+                                                <button class="btn-default" type="submit">
+                                                    <span>Show all</span>
+                                                </button>
+                                            </div>
+                                        </form>
+                                        <ul class="pagination">
+                                            <li id="pagination_previous">
+                                                <span>
+                                                    <i class="fa fa-chevron-left"></i>
+                                                    <b>Previous</b>
+                                                </span>
+                                            </li>
+                                            <li class="active current">
+                                                <span><span>1</span></span>
+                                            </li>
+                                            <li>
+                                                <a href="">
+                                                    <span>2</span>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="">
+                                                    <span>3</span>
+                                                </a>
+                                            </li>
+                                            <li id="pagination_next">
+                                                <a href="">
+                                                    <b>Next</b>
+                                                    <i class="fa fa-chevron-right"></i>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="product-count">Showing 1 - 9 of 19 items</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="left_column">
+                            <section id="layered_block_left" class="block">
+                                <h4 class="title_block">Catalog</h4>
+                                <div class="block_content">
+                                    <form id="layered_form" action="#">
+                                        <div>
+                                            <div class="layered_filter">
+                                                <div class="layered_subtitle_heading">
+                                                    <span class="layered_subtitle">Categories</span>
+                                                </div>
+                                                <ul id="ul_layered_category_0" class="layered_filter_ul">
+                                                    <li class="nomargin hiddable">
+                                                        <div id="uniform-layered" class="checker">
+                                                            <span>
+                                                                <input id="layered_category" class="chenckbox"
+                                                                       name="layered_category" value="4" type="checkbox"/>
+                                                            </span>
+                                                        </div>
+                                                        <label for="layered_category">
+                                                            <a href="#" >
+                                                                Aliquam congue
+                                                                <span>(5)</span>
+                                                            </a>
+                                                        </label>
+                                                    </li>
+                                                    <li class="nomargin hiddable">
+                                                        <div id="uniform-layered" class="checker">
+                                                            <span>
+                                                                <input id="layered_category" class="chenckbox"
+                                                                       name="layered_category" value="4" type="checkbox"/>
+                                                            </span>
+                                                        </div>
+                                                        <label for="layered_category">
+                                                            <a href="#" >
+                                                                Pellentesque sed
+                                                                <span>(5)</span>
+                                                            </a>
+                                                        </label>
+                                                    </li>
+                                                    <li class="nomargin hiddable">
+                                                        <div id="uniform-layered" class="checker">
+                                                            <span>
+                                                                <input id="layered_category" class="chenckbox"
+                                                                       name="layered_category" value="4" type="checkbox"/>
+                                                            </span>
+                                                        </div>
+                                                        <label for="layered_category">
+                                                            <a href="#" >
+                                                                Enim adipiscing
+                                                                <span>(8)</span>
+                                                            </a>
+                                                        </label>
+                                                    </li>
+                                                    <li class="nomargin hiddable">
+                                                        <div id="uniform-layered" class="checker">
+                                                            <span>
+                                                                <input id="layered_category" class="chenckbox"
+                                                                       name="layered_category" value="4" type="checkbox"/>
+                                                            </span>
+                                                        </div>
+                                                        <label for="layered_category">
+                                                            <a href="#" >
+                                                                Aliquet sit amet
+                                                                <span>(8)</span>
+                                                            </a>
+                                                        </label>
+                                                    </li>
+                                                    <li class="nomargin hiddable">
+                                                        <div id="uniform-layered" class="checker">
+                                                            <span>
+                                                                <input id="layered_category" class="checkbox"
+                                                                       name="layered_category" value="4" type="checkbox">
+                                                                </input>
+                                                            </span>
+                                                        </div>
+                                                        <label for="layered_category">
+                                                            <a href="#" >
+                                                                Phasellus
+                                                                <span>(6)</span>
+                                                            </a>
+                                                        </label>
+                                                    </li>
+
+                                                </ul>
+                                            </div>
+                                            <div class="layered_filter">
+                                                <div class="layered_subtitle_heading">
+                                                    <span class="layered_subtitle">Availability</span>
+                                                </div>
+                                                <ul id="ul_layered_category_0" class="layered_filter_ul">
+                                                    <li class="nomargin hiddable">
+                                                        <div id="uniform-layered" class="checker">
+                                                            <span>
+                                                                <input id="layered_category" class="chenckbox"
+                                                                       name="layered_category" value="4" type="checkbox"/>
+                                                            </span>
+                                                        </div>
+                                                        <label for="layered_category">
+                                                            <a href="#" >
+                                                                Not available
+                                                                <span>(1)</span>
+                                                            </a>
+                                                        </label>
+                                                    </li>
+                                                    <li class="nomargin hiddable">
+                                                        <div id="uniform-layered" class="checker">
+                                                            <span>
+                                                                <input id="layered_category" class="chenckbox"
+                                                                       name="layered_category" value="4" type="checkbox"/>
+                                                            </span>
+                                                        </div>
+                                                        <label for="layered_category">
+                                                            <a href="#" >
+                                                                In stock
+                                                                <span>(18)</span>
+                                                            </a>
+                                                        </label>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                            <div class="layered_filter">
+                                                <div class="layered_subtitle_heading">
+                                                    <span class="layered_subtitle">Manufacturer</span>
+                                                </div>
+                                                <ul id="ul_layered_category_0" class="layered_filter_ul">
+                                                    <li class="nomargin hiddable">
+                                                        <div id="uniform-layered" class="checker">
+                                                            <span>
+                                                                <input id="layered_category" class="chenckbox"
+                                                                       name="layered_category" value="4" type="checkbox"/>
+                                                            </span>
+                                                        </div>
+                                                        <label for="layered_category">
+                                                            <a href="#" >
+                                                                Duis semper congue metus
+                                                                <span>(3)</span>
+                                                            </a>
+                                                        </label>
+                                                    </li>
+                                                    <li class="nomargin hiddable">
+                                                        <div id="uniform-layered" class="checker">
+                                                            <span>
+                                                                <input id="layered_category" class="chenckbox"
+                                                                       name="layered_category" value="4" type="checkbox"/>
+                                                            </span>
+                                                        </div>
+                                                        <label for="layered_category">
+                                                            <a href="#" >
+                                                                Fusce a viverra nulla
+                                                                <span>(3)</span>
+                                                            </a>
+                                                        </label>
+                                                    </li>
+                                                    <li class="nomargin hiddable">
+                                                        <div id="uniform-layered" class="checker">
+                                                            <span>
+                                                                <input id="layered_category" class="chenckbox"
+                                                                       name="layered_category" value="4" type="checkbox"/>
+                                                            </span>
+                                                        </div>
+                                                        <label for="layered_category">
+                                                            <a href="#" >
+                                                                Fusce vitae auctor erat
+                                                                <span>(2)</span>
+                                                            </a>
+                                                        </label>
+                                                    </li>
+                                                    <li class="nomargin hiddable">
+                                                        <div id="uniform-layered" class="checker">
+                                                            <span>
+                                                                <input id="layered_category" class="chenckbox"
+                                                                       name="layered_category" value="4" type="checkbox"/>
+                                                            </span>
+                                                        </div>
+                                                        <label for="layered_category">
+                                                            <a href="#" >
+                                                                Lorem ipsum dolor
+                                                                <span>(5)</span>
+                                                            </a>
+                                                        </label>
+                                                    </li>
+                                                    <li class="nomargin hiddable">
+                                                        <div id="uniform-layered" class="checker">
+                                                            <span>
+                                                                <input id="layered_category" class="checkbox"
+                                                                       name="layered_category" value="4" type="checkbox">
+                                                                </input>
+                                                            </span>
+                                                        </div>
+                                                        <label for="layered_category">
+                                                            <a href="#" >
+                                                                Nullam aliquam odio tellus
+                                                                <span>(3)</span>
+                                                            </a>
+                                                        </label>
+                                                    </li>
+                                                    <li class="nomargin hiddable">
+                                                        <div id="uniform-layered" class="checker">
+                                                            <span>
+                                                                <input id="layered_category" class="checkbox"
+                                                                       name="layered_category" value="4" type="checkbox">
+                                                                </input>
+                                                            </span>
+                                                        </div>
+                                                        <label for="layered_category">
+                                                            <a href="#" >
+                                                                Sed tincidunt lacinia elit
+                                                                <span>(2)</span>
+                                                            </a>
+                                                        </label>
+                                                    </li>
+                                                    <li class="nomargin hiddable">
+                                                        <div id="uniform-layered" class="checker">
+                                                            <span>
+                                                                <input id="layered_category" class="checkbox"
+                                                                       name="layered_category" value="4" type="checkbox">
+                                                                </input>
+                                                            </span>
+                                                        </div>
+                                                        <label for="layered_category">
+                                                            <a href="#" >
+                                                                Ut feugiat lobortis ligula
+                                                                <span>(1)</span>
+                                                            </a>
+                                                        </label>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                            <div class="layered_price clearfix">
+                                                <div class="heading">
+                                                    <span class="layered_subtitle">Price</span>
+                                                </div>
+                                                <ul class="filter_ul">
+                                                    <label for="price">Range:</label>
+                                                    <span id="price_range">$156.00-$344.00</span>
+                                                    <div class="layered_container">
+                                                        <div class="slider">
+                                                            <div class="ui-slider"></div>
+                                                            <a class="ui-slider-handle" href="#"></a>
+                                                            <a class="ui-slider-handle2" href="#"></a>
+                                                        </div>
+                                                    </div>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <input name="id_category_layered" value="3" type="hidden"/>
+                                    </form>
+                                </div>
+                                <div id="layered_ajax_loader"></div>
+                            </section>
+                            <section id="categories_block_left" class="block">
+                                <h4 class="title_block">Living Room</h4>
+                                <div class="block_content">
+                                    <ul class="tree dhtml">
+                                        <li>
+                                            <span class="grower">
+                                                <i class="fa fa-plus" onclick="block_list()"></i>
+                                            </span>
+                                            <a href="#">Aliquam congue</a>
+                                            <ul>
+                                                <li>
+                                                    <a href="#">
+                                                        <i class="fa fa-angle-right"></i>
+                                                        Lorem ipsum dolor
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">
+                                                        <i class="fa fa-angle-right"></i>
+                                                        Sit amet conse
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">
+                                                        <i class="fa fa-angle-right"></i>
+                                                        Ctetur adipisicing elit
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">
+                                                        <i class="fa fa-angle-right"></i>
+                                                        Sed do eiusmod
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">
+                                                        <i class="fa fa-angle-right"></i>
+                                                        Tempor incididunt ut
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">
+                                                        <i class="fa fa-angle-right"></i>
+                                                        Labore et dolore
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <li>
+                                            <span class="grower">
+                                                <i class="fa fa-plus" onclick="block_list2()"></i>
+                                            </span>
+                                            <a href="#">Pellentesque sed</a>
+                                            <ul>
+                                                <li>
+                                                    <a href="#">
+                                                        <i class="fa fa-angle-right"></i>
+                                                        Lorem ipsum dolor
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">
+                                                        <i class="fa fa-angle-right"></i>
+                                                        Sit amet conse
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">
+                                                        <i class="fa fa-angle-right"></i>
+                                                        Ctetur adipisicing elit
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">
+                                                        <i class="fa fa-angle-right"></i>
+                                                        Sed do eiusmod
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">
+                                                        <i class="fa fa-angle-right"></i>
+                                                        Tempor incididunt ut
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">
+                                                        <i class="fa fa-angle-right"></i>
+                                                        Labore et dolore
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <li>
+                                            <span class="grower">
+                                                <i class="fa fa-plus" onclick="block_list3()"></i>
+                                            </span>
+                                            <a href="#">Enim adipiscing</a>
+                                            <ul>
+                                                <li>
+                                                    <a href="#">
+                                                        <i class="fa fa-angle-right"></i>
+                                                        Lorem ipsum dolor
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">
+                                                        <i class="fa fa-angle-right"></i>
+                                                        Sit amet conse
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">
+                                                        <i class="fa fa-angle-right"></i>
+                                                        Ctetur adipisicing elit
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">
+                                                        <i class="fa fa-angle-right"></i>
+                                                        Sed do eiusmod
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">
+                                                        <i class="fa fa-angle-right"></i>
+                                                        Tempor incididunt ut
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">
+                                                        <i class="fa fa-angle-right"></i>
+                                                        Labore et dolore
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <li>
+                                            <span class="grower">
+                                                <i class="fa fa-plus" onclick="block_list4()"></i>
+                                            </span>
+                                            <a href="#">Aliquet sit amet</a>
+                                            <ul>
+                                                <li>
+                                                    <a href="#">
+                                                        <i class="fa fa-angle-right"></i>
+                                                        Lorem ipsum dolor
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">
+                                                        <i class="fa fa-angle-right"></i>
+                                                        Sit amet conse
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">
+                                                        <i class="fa fa-angle-right"></i>
+                                                        Ctetur adipisicing elit
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">
+                                                        <i class="fa fa-angle-right"></i>
+                                                        Sed do eiusmod
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">
+                                                        <i class="fa fa-angle-right"></i>
+                                                        Tempor incididunt ut
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">
+                                                        <i class="fa fa-angle-right"></i>
+                                                        Labore et dolore
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <li>
+                                            <span class="grower">
+                                                <i class="fa fa-plus" onclick="block_list5()"></i>
+                                            </span>
+                                            <a href="#">Phasellus</a>
+                                            <ul>
+                                                <li>
+                                                    <a href="#">
+                                                        <i class="fa fa-angle-right"></i>
+                                                        Lorem ipsum dolor
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">
+                                                        <i class="fa fa-angle-right"></i>
+                                                        Sit amet conse
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">
+                                                        <i class="fa fa-angle-right"></i>
+                                                        Ctetur adipisicing elit
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">
+                                                        <i class="fa fa-angle-right"></i>
+                                                        Sed do eiusmod
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">
+                                                        <i class="fa fa-angle-right"></i>
+                                                        Tempor incididunt ut
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">
+                                                        <i class="fa fa-angle-right"></i>
+                                                        Labore et dolore
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </section>
+                            <section id="wishlist_block" class="block account">
+                                <h4 class="title_block h4">WishList</h4>
+                                <div class="block_content">
+                                    <div id="wishlist_block_list" class="expanded">
+                                        <dl class="products no-products">
+                                            <dt>No products</dt>
+                                            <dd></dd>
+                                        </dl>
+                                    </div>
+                                    <div class="lnk">
+                                        <a class="btn" href="#">
+                                            <span>
+                                                My wishlists
+                                                <i class="fa fa-angle-right"></i>
+                                            </span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </section>
+                            <section id="informations_block_left_1" class="block informations_block_left">
+                                <h4 class="title_block h4">Information</h4>
+                                <ul>
+                                    <li>
+                                        <a href="#">
+                                            <i class="fa fa-angle-right"></i>
+                                            Delivery
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <i class="fa fa-angle-right"></i>
+                                            Legal Notice
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <i class="fa fa-angle-right"></i>
+                                            Terms and conditions of use
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <i class="fa fa-angle-right"></i>
+                                            About us
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <i class="fa fa-angle-right"></i>
+                                            Secure payment
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <i class="fa fa-angle-right"></i>
+                                            Our stores
+                                        </a>
+                                    </li>
+                                </ul>
+                            </section>
+                            <section id="new-products_block_right" class="block products_block">
+                                <h4 class="title_block h4">New Products</h4>
+                                <div class="block_content product-block">
+                                    <ul class="products">
+                                        <li class="clearfix">
+                                            <a class="products-image" href="#">
+                                                <img class="replace" src="img/product1.png"/>
+                                            </a>
+                                            <div class="product-content">
+                                                <h5>
+                                                    <a class="product-name" href="#">Boardwalk</a>
+                                                </h5>
+                                                <p class="product-description">From ancient times people always wanted
+                                                    to find a harmony. Greek...</p>
+                                                <div class="price-box">
+                                                    <span class="price">$177.51</span>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li class="clearfix">
+                                            <a class="products-image" href="#">
+                                                <img class="replace" src="img/product2.png"/>
+                                            </a>
+                                            <div class="product-content">
+                                                <h5>
+                                                    <a class="product-name" href="#">Brighton Storage Bench</a>
+                                                </h5>
+                                                <p class="product-description">From ancient times people always wanted
+                                                    to find a harmony. Greek...</p>
+                                                <div class="price-box">
+                                                    <span class="price">$220.96 </span>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li class="clearfix">
+                                            <a class="products-image" href="#">
+                                                <img class="replace" src="img/product3.png"/>
+                                            </a>
+                                            <div class="product-content">
+                                                <h5>
+                                                    <a class="product-name" href="#">Ginger Loft</a>
+                                                </h5>
+                                                <p class="product-description">From ancient times people always wanted
+                                                    to find a harmony. Greek...</p>
+                                                <div class="price-box">
+                                                    <span class="price">$288.60</span>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li class="clearfix">
+                                            <a class="products-image" href="#">
+                                                <img class="replace" src="img/product4.png"/>
+                                            </a>
+                                            <div class="product-content">
+                                                <h5>
+                                                    <a class="product-name" href="#">HOME Bradstreet Marzipan
+                                                        Cream Renu Chair</a>
+                                                </h5>
+                                                <p class="product-description">From ancient times people always wanted
+                                                    to find a harmony. Greek...</p>
+                                                <div class="price-box">
+                                                    <span class="price">$156.82</span>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li class="clearfix">
+                                            <a class="products-image" href="#">
+                                                <img class="replace" src="img/product5.png"/>
+                                            </a>
+                                            <div class="product-content">
+                                                <h5>
+                                                    <a class="product-name" href="#">Home Styles Large Wood Server
+                                                        Kitchen Island</a>
+                                                </h5>
+                                                <p class="product-description">From ancient times people always wanted
+                                                    to find a harmony. Greek...</p>
+                                                <div class="price-box">
+                                                    <span class="price">$320.28</span>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li class="clearfix">
+                                            <a class="products-image" href="#">
+                                                <img class="replace" src="img/product6.png"/>
+                                            </a>
+                                            <div class="product-content">
+                                                <h5>
+                                                    <a class="product-name" href="#">Ikea, BIRKELAND</a>
+                                                </h5>
+                                                <p class="product-description">From ancient times people always wanted
+                                                    to find a harmony. Greek...</p>
+                                                <div class="price-box">
+                                                    <span class="price">$296.51</span>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li class="clearfix">
+                                            <a class="products-image" href="#">
+                                                <img class="replace" src="img/product7.png"/>
+                                            </a>
+                                            <div class="product-content">
+                                                <h5>
+                                                    <a class="product-name" href="#">Ikea, DUKEN</a>
+                                                </h5>
+                                                <p class="product-description">From ancient times people always wanted
+                                                    to find a harmony. Greek...</p>
+                                                <div class="price-box">
+                                                    <span class="price">$318.96</span>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li class="clearfix">
+                                            <a class="products-image" href="#">
+                                                <img class="replace" src="img/product8.png"/>
+                                            </a>
+                                            <div class="product-content">
+                                                <h5>
+                                                    <a class="product-name" href="#">Ikea,FRODE</a>
+                                                </h5>
+                                                <p class="product-description">From ancient times people always wanted
+                                                    to find a harmony. Greek...</p>
+                                                <div class="price-box">
+                                                    <span class="price">$192.15</span>
+                                                </div>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                    <div class="lnk">
+                                        <a class="btn" href="#">
+                                            <span>
+                                                All new products
+                                                <i class="fa fa-angle-right"></i>
+                                            </span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </section>
+                            <section id="special_block_right" class="block">
+                                <h4 class="title_block h4">Specials</h4>
+                                <div class="block_content product-block">
+                                    <ul class="products">
+                                        <li class="clearfix">
+                                            <a class="products-image" href="#">
+                                                <img class="replace" src="img/product1.png"/>
+                                            </a>
+                                            <div class="product-content">
+                                                <h5>
+                                                    <a class="product-name" href="#">Marlow Accent Bardot Chair </a>
+                                                </h5>
+                                                <p class="product-description">From ancient times people always...</p>
+                                                <div class="price-box">
+                                                    <span class="price special-price">$288.60</span>
+                                                    <span class="percent-price">-12%</span>
+                                                    <span class="old-price">$327.96</span>
+                                                </div>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                    <div class="lnk">
+                                        <a class="btn" href="#">
+                                            <span>
+                                                All specials
+                                                <i class="fa fa-angle-right"></i>
+                                            </span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </section>
+                            <section id="stores_block_left" class="block">
+                                <h4 class="title_block h4">Our stores</h4>
+                                <div class="block_store">
+                                    <p class="store_image">
+                                        <a href="#" >
+                                            <img src="img/store.png"/>
+                                        </a>
+                                    </p>
+                                    <div class="lnk">
+                                        <a class="btn" href="#">
+                                            <span>
+                                                Discover our stores
+                                                <i class="fa fa-angle-right"></i>
+                                            </span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </section>
+                            <section id="viewed-products_block_left" class="block">
+                                <h4 class="title_block h4">Viewed Products</h4>
+                                <div class="block_content product-block">
+                                    <ul class="products">
+                                        <li class="clearfix">
+                                            <a class="products-image" href="#">
+                                                <img class="replace" src="img/view1.png"/>
+                                            </a>
+                                            <div class="product-content">
+                                                <h5>
+                                                    <a class="product-name" href="#">Ikea, LEIRVIK</a>
+                                                </h5>
+                                                <p class="product-description">From ancient times people always...</p>
+                                            </div>
+                                        </li>
+                                        <li class="clearfix">
+                                            <a class="products-image" href="#">
+                                                <img class="replace" src="img/view2.png"/>
+                                            </a>
+                                            <div class="product-content">
+                                                <h5>
+                                                    <a class="product-name" href="#">Ikea, MALM</a>
+                                                </h5>
+                                                <p class="product-description">From ancient times people always...</p>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </section>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="newsletter-overlay">
+            <div id="newsletter_popup" class="tmnewsletter">
+                <div class="tmnewsletter-inner">
+                    <img src="img/override-logo.png"/>
+                    <div class="tmnewsletter-close icon" onclick="close_override()">
+                        <i class="fa fa-times"></i>
+                    </div>
+                    <div class="tmnewsletter-header">
+                        <h4>Newsletter</h4>
+                    </div>
+                    <div class="tmnewsletter-content">
+                        <div class="status-message"></div>
+                        <p class="description">Sign up for our exclusive email list and be the first to know about
+                            new products, special offers, store event and other discount information.</p>
+                        <div class="form-group">
+                            <input class="form-control" value="Enter your e-mail" />
+                            <button class="btn">
+                                <span>Subscribe</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<script type="text/javascript" src="js/furniture.js"></script>
+<script type="javascript" src="js/swiper.min.js" ></script>
+<section class="footer">
+    <div class="main">
+        <ul class="big-list">
+            <li class="cols">
+                <p class="title">
+                    Categories
+                </p>
+                <ul class="small-list">
+                    <li><a href="Living-Room.php">Living Room</a></li>
+                    <li><a href="Dining-Room.php">Dining Room</a></li>
+                    <li><a href="Bedroom.php">Bedroom</a></li>
+                    <li><a href="Accent-Chairs.php">Accent Chairs</a></li>
+                    <li><a href="Accessories.php">Accessories</a></li>
+                    <li><a href="Kids-World.php">Kids' World</a></li>
+                    <li><a href="Office.php">Office</a></li>
+                    <li><a href="Mattresses.php">Mattresses</a></li>
+                </ul>
+            </li>
+            <li class="cols">
+                <p class="title">
+                    Information
+                </p>
+                <ul class="small-list">
+                    <li><a href="Living-Room.php">Specials</a></li>
+                    <li><a href="Dining-Room.php">New products</a></li>
+                    <li><a href="Bedroom.php">Top sellers</a></li>
+                    <li><a href="Accent-Chairs.php">Our stores</a></li>
+                    <li><a href="Accessories.php">Contact us</a></li>
+                    <li><a href="Kids-World.php">About us</a></li>
+                    <li><a href="Office.php">Pages configuration</a></li>
+                    <li><a href="Mattresses.php">Sitemap</a></li>
+                </ul>
+            </li>
+            <li class="cols">
+                <p class="title1">
+                    <a href="">My account</a>
+                </p>
+                <ul class="small-list">
+                    <li><a href="Living-Room.php">My orders</a></li>
+                    <li><a href="Dining-Room.php">My merchandise returns</a></li>
+                    <li><a href="Bedroom.php">My credit slips</a></li>
+                    <li><a href="Accent-Chairs.php">My addresses</a></li>
+                    <li><a href="Accessories.php">My personal info</a></li>
+                </ul>
+            </li>
+            <li class="cols1">
+                <h1>FURNITURE</h1>
+                <p class="tip">Call us now: </p>
+                <h3 class="phone">(800)2345-6789</h3>
+                <ul class="icons">
+                    <li><a href="" id="icon" class="fa fa-facebook"></a> </li>
+                    <li><a href="" id="icon" class="fa fa-twitter"></a> </li>
+                    <li><a href="" id="icon" class="fa fa-google-plus"></a> </li>
+                    <li><a href="" id="icon" class="fa fa-youtube"></a> </li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+    <div class="copyright">
+        <p class="symbol">©</p>
+        <p class="date">2016</p>
+        <a href="">Ecommerce software by PrestaShop™</a>
+    </div>
+    <div class="nothing"></div>
+</section>
+<script src="js/swiper.min.js"></script>
+<script type="text/javascript">
+    var mySwiper = new Swiper('.swiper-container',{
+        loop: true,
+        autoplay: 2000,
+        pagination: '.swiper-pagination',
+        pagination: '.swiper-pagination',
+    });
+</script>
+</body>
+</html>

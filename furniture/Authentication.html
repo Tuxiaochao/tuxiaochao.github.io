@@ -1,0 +1,1114 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="utf-8">
+    <meta id="viewport" name="viewport"
+          content="width=device-width,initial-scale=1.0,
+                maximum-scale=1.0,user-scalable=no">
+    <link rel="profile" href="http://gmpg.org/xfn/11">
+    <link rel="stylesheet" href="lib/HTML5-Reset/assets/css/reset.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link href="font-awesome-4.5.0/css/font-awesome.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="css/swiper.min.css" />
+    <script type="text/javascript" src="lib/jquery/jquery.min.js"></script>
+</head>
+<body>
+<section class="header">
+    <div class="nav">
+        <div class="contain">
+            <div onmouseover="changeColor(this)"  onmouseout="changeColor2(this)"
+                 class="currencies-block-top">
+                <i class="fa fa-usd fa-0.5x"></i>
+                <i id="down" class="fa fa-angle-down" onclick="display()"></i>
+                <ul class="first-list">
+                    <li class="selected"><a href="#">Dollar</a></li>
+                    <li><a href="#">Euro</a></li>
+                </ul>
+            </div>
+            <div onmouseover="changeColor3(this)"  onmouseout="changeColor4(this)"
+                 class="languages-block-top">
+                <strong>En</strong>
+                <i id="down" class="fa fa-angle-down" onclick="displayLanguage()"></i>
+                <ul class="first-languages">
+                    <li><a title="English" href="">English</a> </li>
+                    <li><a title="Deutsch" href="">Deutsch</a></li>
+                    <li class="selected"><a title="Russian" href="">Russian</a></li>
+                    <li><a title="Español" href="">Español</a></li>
+                    <li><a title="Français" href="">Français</a></li>
+                </ul>
+            </div>
+            <div onmouseover="changeColor5(this)"  onmouseout="changeColor6(this)"
+                 class="header-login">
+                <a href="#" class="symbol">Sign in</a>
+                <i id="down" class="fa fa-angle-down" onclick="displayForm()"></i>
+                <ul class="content">
+                    <li>
+                        <form class="form">
+                            <div class="form_content">
+                                <div class="form-group">
+                                    <label for="email">E-mail</label>
+                                    <input class="email" type="text" value="" placeholder="E-mail" name="Email"
+                                           data-validate="isEmail" />
+                                </div>
+                                <div class="form-group2">
+                                    <label for="passwd">Password</label>
+                                    <span class="form-error">
+                                        <input class="header-passwd" type="password" autocomplete="off"
+                                               value="" placeholder="Password" name="header-passwd"
+                                               data-validate="isPasswd" />
+                                    </span>
+                                </div>
+                                <p class="submit">
+                                    <button class="btn" name="HeaderSubmitLogin" type="button">
+                                        <i class="fa fa-unlock-alt"></i>
+                                    </button>
+                                </p>
+                                <p>
+                                    <a class="fa fa-user"></a>
+                                </p>
+                                <div class="clearfix">
+                                    <a href="" class="fa fa-facebook">
+                                        Facebook Вход
+                                    </a>
+                                    <a href="" class="fa fa-google">
+                                        Google Вход
+                                    </a>
+                                </div>
+                            </div>
+                        </form>
+                    </li>
+                </ul>
+            </div>
+            <ul class="header_links">
+                <li class="contact">
+                    <a href="Contact.php">Contact</a>
+                </li>
+                <li class="blog">
+                    <a href="Blog.php">Blog</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="main">
+        <div class="container">
+            <div class="row">
+                <div id="header_logo">
+                    <a title="Furniture" href="index.php">
+                        <img class="logo" alt="Furniture" src="img/logo.png" />
+                    </a>
+                </div>
+                <div class="warp_cart">
+                    <div class="shopping_cart">
+                        <a rel="nofollow"
+                           onmouseover="changeClassname(this)"
+                           onmouseout="changeClassname2(this)">
+                            <i class="fa fa-shopping-cart"></i>
+                            <b>Cart:</b>
+                            <span class="product">(empty)</span>
+                            <i class="fa fa-angle-down"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="wrap_tmsearch">
+                    <div id="tmsearch">
+                        <form id="tmsearchbox">
+                            <input id="tm_search_query" class="input" type="text" value="Search"
+                                   name="search_query" autocomplete="off" />
+                            <button class="btn-search" name="tm_submit_search" type="submit">
+                                <i class="fa fa-search"></i>
+                            </button>
+                        </form>
+                    </div>
+                </div>
+                <div class="top_menu">
+                    <div class="stickUpTop">
+                        <div class="stickUpHolder">
+                            <ul class="menu">
+                                <li class="">
+                                    <a class="hvr-shutter-out-vertical" href="Living-Room.php">
+                                        Living Room
+                                        <i class="fa fa-angle-down"></i>
+                                    </a>
+                                    <div class="is-megamenu">
+                                        <div class="col">
+                                            <a class="sf-with-ul" href="">Aliquam congue</a>
+                                            <ul class="content">
+                                                <li class="category">
+                                                    <a href="">Lorem ipsum dolor</a>
+                                                </li>
+                                                <li class="category">
+                                                    <a href="">Sit amet conse</a>
+                                                </li>
+                                                <li class="category">
+                                                    <a href="">Ctetur adipisicing elit</a>
+                                                </li>
+                                                <li class="category">
+                                                    <a href="">Sed do eiusmod</a>
+                                                </li>
+                                                <li class="category">
+                                                    <a href="">Tempor incididunt ut</a>
+                                                </li>
+                                                <li class="category">
+                                                    <a href="">Labore et dolore</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div class="col">
+                                            <a class="sf-with-ul" href="">Pellentesque sed</a>
+                                            <ul class="content">
+                                                <li class="category">
+                                                    <a href="">Lorem ipsum dolor</a>
+                                                </li>
+                                                <li class="category">
+                                                    <a href="">Sit amet conse</a>
+                                                </li>
+                                                <li class="category">
+                                                    <a href="">Ctetur adipisicing elit</a>
+                                                </li>
+                                                <li class="category">
+                                                    <a href="">Sed do eiusmod</a>
+                                                </li>
+                                                <li class="category">
+                                                    <a href="">Tempor incididunt ut</a>
+                                                </li>
+                                                <li class="category">
+                                                    <a href="">Labore et dolore</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div class="col">
+                                            <a class="sf-with-ul" href="">Enim adipiscing</a>
+                                            <ul class="content">
+                                                <li class="category">
+                                                    <a href="">Lorem ipsum dolor</a>
+                                                </li>
+                                                <li class="category">
+                                                    <a href="">Sit amet conse</a>
+                                                </li>
+                                                <li class="category">
+                                                    <a href="">Ctetur adipisicing elit</a>
+                                                </li>
+                                                <li class="category">
+                                                    <a href="">Sed do eiusmod</a>
+                                                </li>
+                                                <li class="category">
+                                                    <a href="">Tempor incididunt ut</a>
+                                                </li>
+                                                <li class="category">
+                                                    <a href="">Labore et dolore</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div class="col-pic">
+                                            <a href="" >
+                                                <img class="img" src="img/menu-baner1.png" />
+                                            </a>
+                                        </div>
+                                        <div class="col-pic2">
+                                            <a href="" >
+                                                <img class="img" src="img/menu-baner2.png" />
+                                            </a>
+                                        </div>
+                                        <div class="col-pic2">
+                                            <a href="" >
+                                                <img class="img" src="img/menu-baner3.png" />
+                                            </a>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class=""><a class="hvr-shutter-out-vertical" href="Dining-Room.php">
+                                    Dining Room
+                                </a> </li>
+                                <li class="new_badge"><a class="hvr-shutter-out-vertical" href="Bedroom.php">
+                                    Bedroom
+                                    <span class="menu_badge">New!</span>
+                                </a> </li>
+                                <li class=""><a class="hvr-shutter-out-vertical" href="Accent-Chairs.php">
+                                    Accent Chairs
+                                </a> </li>
+                                <li class="sale_badge"><a class="hvr-shutter-out-vertical" href="Accessories.php">
+                                    Accessories
+                                    <span class="menu_badge">Sale!</span>
+                                </a> </li>
+                                <li class=""><a class="hvr-shutter-out-vertical" href="Kids-World.php">
+                                    Kids'World
+                                </a> </li>
+                                <li class=""><a class="hvr-shutter-out-vertical" href="Office.php">
+                                    Office
+                                </a> </li>
+                                <li class=""><a class="hvr-shutter-out-vertical" href="Mattresses.php">
+                                    Mattresses
+                                </a> </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div id="gear-right">
+                    <i class="fa fa-cogs icon-2x icon-light"></i>
+                </div>
+                <form method="post" action="">
+                    <div id="tool">
+                        <p>The customization tool allows you to make color and font changes in your theme.</p>
+                        <div class="list-tools">
+                            <p id="theme-title">
+                                THEME COLOR
+                            </p>
+                        </div>
+                        <ul id="color-box">
+                            <li class="theme1">
+                                <div class="color-theme1"></div>
+                                <div class="color-theme2"></div>
+                            </li>
+                            <li class="theme2">
+                                <div class="color-theme1"></div>
+                                <div class="color-theme2"></div>
+                            </li>
+                            <li class="theme3">
+                                <div class="color-theme1"></div>
+                                <div class="color-theme2"></div>
+                            </li>
+                            <li class="theme4">
+                                <div class="color-theme1"></div>
+                                <div class="color-theme2"></div>
+                            </li>
+                        </ul>
+                        <div class="list-tools">
+                            <p id="buttons-title">
+                                NEWSLETTER POP-UP
+                            </p>
+                        </div>
+                        <div class="button-box">
+                            <button id="module">
+                                <span class="bg"></span>
+                                <span class="enable">On</span>
+                                <span class="disable">Off</span>
+                            </button>
+                        </div>
+                        <div class="list-tools">
+                            <p id="buttons-title">
+                                OLARK CHAT
+                            </p>
+                        </div>
+                        <div class="button-box">
+                            <button id="module" onclick="changeBtn()">
+                                <span class="bg"></span>
+                                <span class="enable">On</span>
+                                <span class="disable">Off</span>
+                            </button>
+                        </div>
+                        <div class="btn-tools">
+                            <button id="reset" class="btn-1" type="button">Reset</button>
+                        </div>
+                        <div id="block-advertisement">
+                            <a href="">
+                                <img class="responsive" src="img/advertisement.png" />
+                            </a>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="page" class="Authentication">
+    <div class="columns-container">
+        <div id="columns" class="container">
+            <div class="bread">
+                <a class="home" href=""><i class="fa fa-home"></i></a>
+                <span class="navigation-pipe">&gt;</span>
+                Authentication
+            </div>
+            <div class="row">
+                <div class="large-left">
+                    <div class="row">
+                        <div class="center_column">
+                            <h1 class="page-heading">Authentication</h1>
+                            <ul id="order_step">
+                                <li class="step_done_last first">
+                                    <a href="Shopping-cart.php">
+                                        <em>01.</em>
+                                        Summary
+                                    </a>
+                                </li>
+                                <li class="step_current second">
+                                         <span>
+                                            <em>02.</em>
+                                            Sign in
+                                        </span>
+                                </li>
+                                <li class="step_todo third">
+                                        <span>
+                                            <em>03.</em>
+                                            Address
+                                        </span>
+                                </li>
+                                <li class="step_todo four">
+                                         <span>
+                                            <em>04.</em>
+                                            Shipping
+                                        </span>
+                                </li>
+                                <li id="step_end" class="step_todo last">
+                                        <span>
+                                            <em>05.</em>
+                                            Payment
+                                        </span>
+                                </li>
+                            </ul>
+                            <div class="row">
+                                <div class="form_left">
+                                    <form id="create-account">
+                                        <h3 class="page-subheading">Create an account</h3>
+                                        <div class="form_content">
+                                            <p>Please enter your email address to create an account.</p>
+                                            <div id="create-account_error">
+                                                <i class="fa fa-times-circle" aria-hidden="true"></i>
+                                                <ol>
+                                                    <li>Invalid email address.</li>
+                                                </ol>
+                                            </div>
+                                            <div class="form-group">
+                                                <label for="email_create">Email address</label>
+                                                <input id="email_create" name="email_create" value="" type="text"/>
+                                            </div>
+                                            <div class="submit">
+                                                <button id="SubmitCreate" class="btn" type="button" >
+                                                        <span>
+                                                            <i class="fa fa-user"></i>
+                                                            Create an account
+                                                        </span>
+                                                </button>
+
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div>
+                                <div class="form_left">
+                                    <form id="create-account">
+                                        <h3 class="page-subheading">Already registered?</h3>
+                                        <div class="form_content">
+                                            <div class="form-group">
+                                                <label for="email_create">Email address</label>
+                                                <input id="email_create" name="email_create" value="" type="text"/>
+                                            </div>
+                                            <div class="form-group">
+                                                <label for="email_create">Password</label>
+                                                <input id="email_create" name="email_create" value="" type="text"/>
+                                            </div>
+                                            <p class="lost_password">
+                                                <a href="#">Forgot your password?</a>
+                                            </p>
+                                            <div class="submit">
+                                                <button id="SubmitCreate" class="btn" type="submit">
+                                                        <span>
+                                                            <i class="fa fa-lock"></i>
+                                                            sign in
+                                                        </span>
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                            <form id="new_account_form">
+                                <div class="box">
+                                    <div id="opc_account_form">
+                                        <h3 class="page-heading">Instant checkout</h3>
+                                        <div class="required form-group">
+                                            <label for="guest_email">
+                                                Email address
+                                                <sup>*</sup>
+                                            </label>
+                                            <input id="guest_email" value="" type="text"/>
+                                        </div>
+                                        <div class="clearfix gender-line">
+                                            <label>Title</label>
+                                            <div class="radio-inline">
+                                                <label class="top">
+                                                    <div id="uniform" class="radio">
+                                                            <span class="checked">
+                                                                <input id="gender" name="sex" value="1" type="radio"/>
+                                                            </span>
+                                                    </div>
+                                                    Mr.
+                                                </label>
+                                            </div>
+                                            <div class="radio-inline">
+                                                <label class="top">
+                                                    <div id="uniform" class="radio">
+                                                            <span class="checked">
+                                                                <input id="gender" name="sex" value="2" type="radio"/>
+                                                            </span>
+                                                    </div>
+                                                    Mrs.
+                                                </label>
+                                            </div>
+                                        </div>
+                                        <div class="required form-group">
+                                            <label for="firstname">
+                                                First name
+                                                <sup>*</sup>
+                                            </label>
+                                            <input id="firstname" name="firstname" value="" type="text"/>
+                                        </div>
+                                        <div class="required form-group">
+                                            <label for="lastname">
+                                                Last name
+                                                <sup>*</sup>
+                                            </label>
+                                            <input id="firstname" name="firstname" class="form-control" value="" type="text"/>
+                                        </div>
+                                        <div class="form-group date-select">
+                                            <label>Date of Birth</label>
+                                            <div class="row">
+                                                <div class="col">
+                                                    <div id="uniform-days" class="selector">
+                                                            <span>
+                                                                -
+                                                                <i class="fa fa-sort-desc" aria-hidden="true"></i>
+                                                            </span>
+                                                        <select id="days" class="form-control" name="days">
+                                                            <option value="">-</option>
+                                                            <option value="1">1 </option>
+                                                            <option value="2">2 </option>
+                                                            <option value="3">3 </option>
+                                                            <option value="4">4 </option>
+                                                            <option value="5">5 </option>
+                                                            <option value="6">6 </option>
+                                                            <option value="7">7 </option>
+                                                            <option value="8">8 </option>
+                                                            <option value="9">9 </option>
+                                                            <option value="10">10 </option>
+                                                            <option value="11">11 </option>
+                                                            <option value="12">12 </option>
+                                                            <option value="13">13 </option>
+                                                            <option value="14">14 </option>
+                                                            <option value="15">15 </option>
+                                                            <option value="16">16 </option>
+                                                            <option value="17">17 </option>
+                                                            <option value="18">18 </option>
+                                                            <option value="19">19 </option>
+                                                            <option value="20">20 </option>
+                                                            <option value="21">21 </option>
+                                                            <option value="22">22 </option>
+                                                            <option value="23">23 </option>
+                                                            <option value="24">24 </option>
+                                                            <option value="25">25 </option>
+                                                            <option value="26">26 </option>
+                                                            <option value="27">27 </option>
+                                                            <option value="28">28 </option>
+                                                            <option value="29">29 </option>
+                                                            <option value="30">30 </option>
+                                                            <option value="31">31 </option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                                <div class="col">
+                                                    <div id="uniform-days" class="selector">
+                                                            <span>
+                                                                -
+                                                                <i class="fa fa-sort-desc" aria-hidden="true"></i>
+                                                            </span>
+                                                        <select id="days" class="form-control" name="months">
+                                                            <option value="">-</option>
+                                                            <option value="1">January  </option>
+                                                            <option value="2">February  </option>
+                                                            <option value="3">March  </option>
+                                                            <option value="4">April </option>
+                                                            <option value="5">May  </option>
+                                                            <option value="6">June  </option>
+                                                            <option value="7">July  </option>
+                                                            <option value="8">August  </option>
+                                                            <option value="9">September  </option>
+                                                            <option value="10">October  </option>
+                                                            <option value="11">November  </option>
+                                                            <option value="12">December  </option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                                <div class="col">
+                                                    <div id="uniform-days" class="selector">
+                                                            <span>
+                                                                -
+                                                                <i class="fa fa-sort-desc" aria-hidden="true"></i>
+                                                            </span>
+                                                        <select id="days" class="form-control" name="years">
+                                                            <option value="">-</option>
+                                                            <option value="2016">2016 </option>
+                                                            <option value="2015">2015 </option>
+                                                            <option value="2014">2014 </option>
+                                                            <option value="2013">2013 </option>
+                                                            <option value="2012">2012 </option>
+                                                            <option value="2011">2011 </option>
+                                                            <option value="2010">2010 </option>
+                                                            <option value="2009">2009 </option>
+                                                            <option value="2008">2008 </option>
+                                                            <option value="2007">2007 </option>
+                                                            <option value="2006">2006 </option>
+                                                            <option value="2005">2005 </option>
+                                                            <option value="2004">2004 </option>
+                                                            <option value="2003">2003 </option>
+                                                            <option value="2002">2002 </option>
+                                                            <option value="2001">2001 </option>
+                                                            <option value="2000">2000 </option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="checkbox">
+                                            <label for="newsletter">
+                                                <div id="uniform-newsletter" class="checker">
+                                                        <span>
+                                                            <input id="newsletter" name="newsletter" value="1" type="checkbox"/>
+                                                        </span>
+                                                </div>
+                                                Sign up for our newsletter!
+                                            </label>
+                                        </div>
+                                        <div class="checkbox">
+                                            <label for="optin">
+                                                <div id="uniform-optin" class="checker">
+                                                        <span>
+                                                            <input id="optin" name="optin" value="1" type="checkbox"/>
+                                                        </span>
+                                                </div>
+                                                Receive special offers from our partners!
+                                            </label>
+                                        </div>
+                                        <h3 class="page-heading">Delivery address</h3>
+                                        <div class="form-group">
+                                            <label for="company">
+                                                Last name
+                                                <sup>*</sup>
+                                            </label>
+                                            <input id="company" class="form-control" name="firstname" value="" type="text"/>
+                                        </div>
+                                        <div class="required form-group">
+                                            <label for="lastname">
+                                                Addresss
+                                                <sup>*</sup>
+                                            </label>
+                                            <input id="firstname" name="firstname" class="form-control" value="" type="text"/>
+                                        </div>
+                                        <div class="required form-group">
+                                            <label for="lastname">
+                                                Zip/Postal Code
+                                                <sup>*</sup>
+                                            </label>
+                                            <input id="firstname" name="firstname" class="form-control" value="" type="text"/>
+                                        </div>
+                                        <div class="required form-group">
+                                            <label for="lastname">
+                                                City
+                                                <sup>*</sup>
+                                            </label>
+                                            <input id="firstname" name="firstname" class="form-control" value="" type="text"/>
+                                        </div>
+                                        <div class="required select form-group">
+                                            <label for="lastname">
+                                                Country
+                                                <sup>*</sup>
+                                            </label>
+                                            <input id="firstname" name="firstname" class="form-control" value="China" type="text"/>
+                                        </div>
+                                        <div class="required form-group">
+                                            <label for="lastname">
+                                                Mobile phone
+                                                <sup>*</sup>
+                                            </label>
+                                            <input id="firstname" name="firstname" class="form-control" value="" type="text"/>
+                                        </div>
+                                        <div class="checkbox">
+                                            <label for="newsletter">
+                                                <div id="uniform-newsletter" class="checker">
+                                                        <span>
+                                                            <input id="newsletter" name="newsletter" value="1" type="checkbox"/>
+                                                        </span>
+                                                </div>
+                                                Please use another address for invoice
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <p class="cart_navigation">
+                                        <span>
+                                            <sup>*</sup>
+                                            Required field
+                                        </span>
+                                    <button id="submitGuestAcconut" class="btn" type="submit" name="submit">
+                                            <span>
+                                                Proceed to checkout
+                                                <i class="fa fa-chevron-right"></i>
+                                            </span>
+                                    </button>
+                                </p>
+                            </form>
+                        </div>
+                        <div class="left_column">
+                            <section id="wishlist_block" class="block account">
+                                <h4 class="title_block h4">WishList</h4>
+                                <div class="block_content">
+                                    <div id="wishlist_block_list" class="expanded">
+                                        <dl class="products no-products">
+                                            <dt>No products</dt>
+                                            <dd></dd>
+                                        </dl>
+                                    </div>
+                                    <div class="lnk">
+                                        <a class="btn" href="#">
+                                            <span>
+                                                All best sellers
+                                                <i class="fa fa-angle-right"></i>
+                                            </span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </section>
+                            <section id="new-products_block_right" class="block products_block">
+                                <h4 class="title_block h4">Top Sellers</h4>
+                                <div class="block_content product-block">
+                                    <ul class="products">
+                                        <li class="clearfix">
+                                            <a class="products-image" href="#">
+                                                <img class="replace" src="img/product1.png"/>
+                                            </a>
+                                            <div class="product-content">
+                                                <h5>
+                                                    <a class="product-name" href="#">Boardwalk</a>
+                                                </h5>
+                                                <p class="product-description">From ancient times people always wanted
+                                                    to find a harmony. Greek...</p>
+                                                <div class="price-box">
+                                                    <span class="price">$177.51</span>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li class="clearfix">
+                                            <a class="products-image" href="#">
+                                                <img class="replace" src="img/product2.png"/>
+                                            </a>
+                                            <div class="product-content">
+                                                <h5>
+                                                    <a class="product-name" href="#">Brighton Storage Bench</a>
+                                                </h5>
+                                                <p class="product-description">From ancient times people always wanted
+                                                    to find a harmony. Greek...</p>
+                                                <div class="price-box">
+                                                    <span class="price">$220.96 </span>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li class="clearfix">
+                                            <a class="products-image" href="#">
+                                                <img class="replace" src="img/product3.png"/>
+                                            </a>
+                                            <div class="product-content">
+                                                <h5>
+                                                    <a class="product-name" href="#">Ginger Loft</a>
+                                                </h5>
+                                                <p class="product-description">From ancient times people always wanted
+                                                    to find a harmony. Greek...</p>
+                                                <div class="price-box">
+                                                    <span class="price">$288.60</span>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li class="clearfix">
+                                            <a class="products-image" href="#">
+                                                <img class="replace" src="img/product4.png"/>
+                                            </a>
+                                            <div class="product-content">
+                                                <h5>
+                                                    <a class="product-name" href="#">HOME Bradstreet Marzipan
+                                                        Cream Renu Chair</a>
+                                                </h5>
+                                                <p class="product-description">From ancient times people always wanted
+                                                    to find a harmony. Greek...</p>
+                                                <div class="price-box">
+                                                    <span class="price">$156.82</span>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li class="clearfix">
+                                            <a class="products-image" href="#">
+                                                <img class="replace" src="img/product5.png"/>
+                                            </a>
+                                            <div class="product-content">
+                                                <h5>
+                                                    <a class="product-name" href="#">Home Styles Large Wood Server
+                                                        Kitchen Island</a>
+                                                </h5>
+                                                <p class="product-description">From ancient times people always wanted
+                                                    to find a harmony. Greek...</p>
+                                                <div class="price-box">
+                                                    <span class="price">$320.28</span>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li class="clearfix">
+                                            <a class="products-image" href="#">
+                                                <img class="replace" src="img/product6.png"/>
+                                            </a>
+                                            <div class="product-content">
+                                                <h5>
+                                                    <a class="product-name" href="#">Ikea, BIRKELAND</a>
+                                                </h5>
+                                                <p class="product-description">From ancient times people always wanted
+                                                    to find a harmony. Greek...</p>
+                                                <div class="price-box">
+                                                    <span class="price">$296.51</span>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li class="clearfix">
+                                            <a class="products-image" href="#">
+                                                <img class="replace" src="img/product7.png"/>
+                                            </a>
+                                            <div class="product-content">
+                                                <h5>
+                                                    <a class="product-name" href="#">Ikea, DUKEN</a>
+                                                </h5>
+                                                <p class="product-description">From ancient times people always wanted
+                                                    to find a harmony. Greek...</p>
+                                                <div class="price-box">
+                                                    <span class="price">$318.96</span>
+                                                </div>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                    <div class="lnk">
+                                        <a class="btn" href="#">
+                                            <span>
+                                                All new products
+                                                <i class="fa fa-angle-right"></i>
+                                            </span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </section>
+                            <section id="informations_block_left_1" class="block informations_block_left">
+                                <h4 class="title_block h4">Information</h4>
+                                <ul>
+                                    <li>
+                                        <a href="#">
+                                            <i class="fa fa-angle-right"></i>
+                                            Delivery
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <i class="fa fa-angle-right"></i>
+                                            Legal Notice
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <i class="fa fa-angle-right"></i>
+                                            Terms and conditions of use
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <i class="fa fa-angle-right"></i>
+                                            About us
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <i class="fa fa-angle-right"></i>
+                                            Secure payment
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <i class="fa fa-angle-right"></i>
+                                            Our stores
+                                        </a>
+                                    </li>
+                                </ul>
+                            </section>
+                            <section id="new-products_block_right" class="block products_block">
+                                <h4 class="title_block h4">New Products</h4>
+                                <div class="block_content product-block">
+                                    <ul class="products">
+                                        <li class="clearfix">
+                                            <a class="products-image" href="#">
+                                                <img class="replace" src="img/product1.png"/>
+                                            </a>
+                                            <div class="product-content">
+                                                <h5>
+                                                    <a class="product-name" href="#">Boardwalk</a>
+                                                </h5>
+                                                <p class="product-description">From ancient times people always wanted
+                                                    to find a harmony. Greek...</p>
+                                                <div class="price-box">
+                                                    <span class="price">$177.51</span>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li class="clearfix">
+                                            <a class="products-image" href="#">
+                                                <img class="replace" src="img/product2.png"/>
+                                            </a>
+                                            <div class="product-content">
+                                                <h5>
+                                                    <a class="product-name" href="#">Brighton Storage Bench</a>
+                                                </h5>
+                                                <p class="product-description">From ancient times people always wanted
+                                                    to find a harmony. Greek...</p>
+                                                <div class="price-box">
+                                                    <span class="price">$220.96 </span>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li class="clearfix">
+                                            <a class="products-image" href="#">
+                                                <img class="replace" src="img/product3.png"/>
+                                            </a>
+                                            <div class="product-content">
+                                                <h5>
+                                                    <a class="product-name" href="#">Ginger Loft</a>
+                                                </h5>
+                                                <p class="product-description">From ancient times people always wanted
+                                                    to find a harmony. Greek...</p>
+                                                <div class="price-box">
+                                                    <span class="price">$288.60</span>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li class="clearfix">
+                                            <a class="products-image" href="#">
+                                                <img class="replace" src="img/product4.png"/>
+                                            </a>
+                                            <div class="product-content">
+                                                <h5>
+                                                    <a class="product-name" href="#">HOME Bradstreet Marzipan
+                                                        Cream Renu Chair</a>
+                                                </h5>
+                                                <p class="product-description">From ancient times people always wanted
+                                                    to find a harmony. Greek...</p>
+                                                <div class="price-box">
+                                                    <span class="price">$156.82</span>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li class="clearfix">
+                                            <a class="products-image" href="#">
+                                                <img class="replace" src="img/product5.png"/>
+                                            </a>
+                                            <div class="product-content">
+                                                <h5>
+                                                    <a class="product-name" href="#">Home Styles Large Wood Server
+                                                        Kitchen Island</a>
+                                                </h5>
+                                                <p class="product-description">From ancient times people always wanted
+                                                    to find a harmony. Greek...</p>
+                                                <div class="price-box">
+                                                    <span class="price">$320.28</span>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li class="clearfix">
+                                            <a class="products-image" href="#">
+                                                <img class="replace" src="img/product6.png"/>
+                                            </a>
+                                            <div class="product-content">
+                                                <h5>
+                                                    <a class="product-name" href="#">Ikea, BIRKELAND</a>
+                                                </h5>
+                                                <p class="product-description">From ancient times people always wanted
+                                                    to find a harmony. Greek...</p>
+                                                <div class="price-box">
+                                                    <span class="price">$296.51</span>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li class="clearfix">
+                                            <a class="products-image" href="#">
+                                                <img class="replace" src="img/product7.png"/>
+                                            </a>
+                                            <div class="product-content">
+                                                <h5>
+                                                    <a class="product-name" href="#">Ikea, DUKEN</a>
+                                                </h5>
+                                                <p class="product-description">From ancient times people always wanted
+                                                    to find a harmony. Greek...</p>
+                                                <div class="price-box">
+                                                    <span class="price">$318.96</span>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li class="clearfix">
+                                            <a class="products-image" href="#">
+                                                <img class="replace" src="img/product8.png"/>
+                                            </a>
+                                            <div class="product-content">
+                                                <h5>
+                                                    <a class="product-name" href="#">Ikea,FRODE</a>
+                                                </h5>
+                                                <p class="product-description">From ancient times people always wanted
+                                                    to find a harmony. Greek...</p>
+                                                <div class="price-box">
+                                                    <span class="price">$192.15</span>
+                                                </div>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                    <div class="lnk">
+                                        <a class="btn" href="#">
+                                            <span>
+                                                All new products
+                                                <i class="fa fa-angle-right"></i>
+                                            </span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </section>
+                            <section id="special_block_right" class="block">
+                                <h4 class="title_block h4">Specials</h4>
+                                <div class="block_content product-block">
+                                    <ul class="products">
+                                        <li class="clearfix">
+                                            <a class="products-image" href="#">
+                                                <img class="replace" src="img/product1.png"/>
+                                            </a>
+                                            <div class="product-content">
+                                                <h5>
+                                                    <a class="product-name" href="#">Marlow Accent Bardot Chair </a>
+                                                </h5>
+                                                <p class="product-description">From ancient times people always...</p>
+                                                <div class="price-box">
+                                                    <span class="price special-price">$288.60</span>
+                                                    <span class="percent-price">-12%</span>
+                                                    <span class="old-price">$327.96</span>
+                                                </div>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                    <div class="lnk">
+                                        <a class="btn" href="#">
+                                            <span>
+                                                All specials
+                                                <i class="fa fa-angle-right"></i>
+                                            </span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </section>
+                            <section id="viewed-products_block_left" class="block">
+                                <h4 class="title_block h4">Viewed Products</h4>
+                                <div class="block_content product-block">
+                                    <ul class="products">
+                                        <li class="clearfix">
+                                            <a class="products-image" href="#">
+                                                <img class="replace" src="img/view1.png"/>
+                                            </a>
+                                            <div class="product-content">
+                                                <h5>
+                                                    <a class="product-name" href="#">Ikea, LEIRVIK</a>
+                                                </h5>
+                                                <p class="product-description">From ancient times people always...</p>
+                                            </div>
+                                        </li>
+                                        <li class="clearfix">
+                                            <a class="products-image" href="#">
+                                                <img class="replace" src="img/view2.png"/>
+                                            </a>
+                                            <div class="product-content">
+                                                <h5>
+                                                    <a class="product-name" href="#">Ikea, MALM</a>
+                                                </h5>
+                                                <p class="product-description">From ancient times people always...</p>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </section>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<script type="text/javascript" src="js/furniture.js"></script>
+<script type="javascript" src="js/swiper.min.js" ></script>
+<section class="footer">
+    <div class="main">
+        <ul class="big-list">
+            <li class="cols">
+                <p class="title">
+                    Categories
+                </p>
+                <ul class="small-list">
+                    <li><a href="Living-Room.php">Living Room</a></li>
+                    <li><a href="Dining-Room.php">Dining Room</a></li>
+                    <li><a href="Bedroom.php">Bedroom</a></li>
+                    <li><a href="Accent-Chairs.php">Accent Chairs</a></li>
+                    <li><a href="Accessories.php">Accessories</a></li>
+                    <li><a href="Kids-World.php">Kids' World</a></li>
+                    <li><a href="Office.php">Office</a></li>
+                    <li><a href="Mattresses.php">Mattresses</a></li>
+                </ul>
+            </li>
+            <li class="cols">
+                <p class="title">
+                    Information
+                </p>
+                <ul class="small-list">
+                    <li><a href="Living-Room.php">Specials</a></li>
+                    <li><a href="Dining-Room.php">New products</a></li>
+                    <li><a href="Bedroom.php">Top sellers</a></li>
+                    <li><a href="Accent-Chairs.php">Our stores</a></li>
+                    <li><a href="Accessories.php">Contact us</a></li>
+                    <li><a href="Kids-World.php">About us</a></li>
+                    <li><a href="Office.php">Pages configuration</a></li>
+                    <li><a href="Mattresses.php">Sitemap</a></li>
+                </ul>
+            </li>
+            <li class="cols">
+                <p class="title1">
+                    <a href="">My account</a>
+                </p>
+                <ul class="small-list">
+                    <li><a href="Living-Room.php">My orders</a></li>
+                    <li><a href="Dining-Room.php">My merchandise returns</a></li>
+                    <li><a href="Bedroom.php">My credit slips</a></li>
+                    <li><a href="Accent-Chairs.php">My addresses</a></li>
+                    <li><a href="Accessories.php">My personal info</a></li>
+                </ul>
+            </li>
+            <li class="cols1">
+                <h1>FURNITURE</h1>
+                <p class="tip">Call us now: </p>
+                <h3 class="phone">(800)2345-6789</h3>
+                <ul class="icons">
+                    <li><a href="" id="icon" class="fa fa-facebook"></a> </li>
+                    <li><a href="" id="icon" class="fa fa-twitter"></a> </li>
+                    <li><a href="" id="icon" class="fa fa-google-plus"></a> </li>
+                    <li><a href="" id="icon" class="fa fa-youtube"></a> </li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+    <div class="copyright">
+        <p class="symbol">©</p>
+        <p class="date">2016</p>
+        <a href="">Ecommerce software by PrestaShop™</a>
+    </div>
+    <div class="nothing"></div>
+</section>
+<script src="js/swiper.min.js"></script>
+<script type="text/javascript">
+    var mySwiper = new Swiper('.swiper-container',{
+        loop: true,
+        autoplay: 2000,
+        pagination: '.swiper-pagination',
+        pagination: '.swiper-pagination',
+    });
+</script>
+</body>
+</html>

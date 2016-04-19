@@ -1,0 +1,766 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="utf-8">
+    <meta id="viewport" name="viewport"
+          content="width=device-width,initial-scale=1.0,
+                maximum-scale=1.0,user-scalable=no">
+    <link rel="profile" href="http://gmpg.org/xfn/11">
+    <link rel="stylesheet" href="lib/HTML5-Reset/assets/css/reset.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link href="font-awesome-4.5.0/css/font-awesome.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="css/swiper.min.css" />
+    <script type="text/javascript" src="lib/jquery/jquery.min.js"></script>
+</head>
+<body>
+<section class="header">
+    <div class="nav">
+        <div class="contain">
+            <div onmouseover="changeColor(this)"  onmouseout="changeColor2(this)"
+                 class="currencies-block-top">
+                <i class="fa fa-usd fa-0.5x"></i>
+                <i id="down" class="fa fa-angle-down" onclick="display()"></i>
+                <ul class="first-list">
+                    <li class="selected"><a href="#">Dollar</a></li>
+                    <li><a href="#">Euro</a></li>
+                </ul>
+            </div>
+            <div onmouseover="changeColor3(this)"  onmouseout="changeColor4(this)"
+                 class="languages-block-top">
+                <strong>En</strong>
+                <i id="down" class="fa fa-angle-down" onclick="displayLanguage()"></i>
+                <ul class="first-languages">
+                    <li><a title="English" href="">English</a> </li>
+                    <li><a title="Deutsch" href="">Deutsch</a></li>
+                    <li class="selected"><a title="Russian" href="">Russian</a></li>
+                    <li><a title="Español" href="">Español</a></li>
+                    <li><a title="Français" href="">Français</a></li>
+                </ul>
+            </div>
+            <div onmouseover="changeColor5(this)"  onmouseout="changeColor6(this)"
+                 class="header-login">
+                <a href="#" class="symbol">Sign in</a>
+                <i id="down" class="fa fa-angle-down" onclick="displayForm()"></i>
+                <ul class="content">
+                    <li>
+                        <form class="form">
+                            <div class="form_content">
+                                <div class="form-group">
+                                    <label for="email">E-mail</label>
+                                    <input class="email" type="text" value="" placeholder="E-mail" name="Email"
+                                           data-validate="isEmail" />
+                                </div>
+                                <div class="form-group2">
+                                    <label for="passwd">Password</label>
+                                    <span class="form-error">
+                                        <input class="header-passwd" type="password" autocomplete="off"
+                                               value="" placeholder="Password" name="header-passwd"
+                                               data-validate="isPasswd" />
+                                    </span>
+                                </div>
+                                <p class="submit">
+                                    <button class="btn" name="HeaderSubmitLogin" type="button">
+                                        <i class="fa fa-unlock-alt"></i>
+                                    </button>
+                                </p>
+                                <p>
+                                    <a class="fa fa-user"></a>
+                                </p>
+                                <div class="clearfix">
+                                    <a href="" class="fa fa-facebook">
+                                        Facebook Вход
+                                    </a>
+                                    <a href="" class="fa fa-google">
+                                        Google Вход
+                                    </a>
+                                </div>
+                            </div>
+                        </form>
+                    </li>
+                </ul>
+            </div>
+            <ul class="header_links">
+                <li class="contact">
+                    <a href="Contact.php">Contact</a>
+                </li>
+                <li class="blog">
+                    <a href="Blog.php">Blog</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="main">
+        <div class="container">
+            <div class="row">
+                <div id="header_logo">
+                    <a title="Furniture" href="index.php">
+                        <img class="logo" alt="Furniture" src="img/logo.png" />
+                    </a>
+                </div>
+                <div class="warp_cart">
+                    <div class="shopping_cart">
+                        <a rel="nofollow"
+                           onmouseover="changeClassname(this)"
+                           onmouseout="changeClassname2(this)">
+                            <i class="fa fa-shopping-cart"></i>
+                            <b>Cart:</b>
+                            <span class="product">(empty)</span>
+                            <i class="fa fa-angle-down"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="wrap_tmsearch">
+                    <div id="tmsearch">
+                        <form id="tmsearchbox">
+                            <input id="tm_search_query" class="input" type="text" value="Search"
+                                   name="search_query" autocomplete="off" />
+                            <button class="btn-search" name="tm_submit_search" type="submit">
+                                <i class="fa fa-search"></i>
+                            </button>
+                        </form>
+                    </div>
+                </div>
+                <div class="top_menu">
+                    <div class="stickUpTop">
+                        <div class="stickUpHolder">
+                            <ul class="menu">
+                                <li class="">
+                                    <a class="hvr-shutter-out-vertical" href="Living-Room.php">
+                                        Living Room
+                                        <i class="fa fa-angle-down"></i>
+                                    </a>
+                                    <div class="is-megamenu">
+                                        <div class="col">
+                                            <a class="sf-with-ul" href="">Aliquam congue</a>
+                                            <ul class="content">
+                                                <li class="category">
+                                                    <a href="">Lorem ipsum dolor</a>
+                                                </li>
+                                                <li class="category">
+                                                    <a href="">Sit amet conse</a>
+                                                </li>
+                                                <li class="category">
+                                                    <a href="">Ctetur adipisicing elit</a>
+                                                </li>
+                                                <li class="category">
+                                                    <a href="">Sed do eiusmod</a>
+                                                </li>
+                                                <li class="category">
+                                                    <a href="">Tempor incididunt ut</a>
+                                                </li>
+                                                <li class="category">
+                                                    <a href="">Labore et dolore</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div class="col">
+                                            <a class="sf-with-ul" href="">Pellentesque sed</a>
+                                            <ul class="content">
+                                                <li class="category">
+                                                    <a href="">Lorem ipsum dolor</a>
+                                                </li>
+                                                <li class="category">
+                                                    <a href="">Sit amet conse</a>
+                                                </li>
+                                                <li class="category">
+                                                    <a href="">Ctetur adipisicing elit</a>
+                                                </li>
+                                                <li class="category">
+                                                    <a href="">Sed do eiusmod</a>
+                                                </li>
+                                                <li class="category">
+                                                    <a href="">Tempor incididunt ut</a>
+                                                </li>
+                                                <li class="category">
+                                                    <a href="">Labore et dolore</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div class="col">
+                                            <a class="sf-with-ul" href="">Enim adipiscing</a>
+                                            <ul class="content">
+                                                <li class="category">
+                                                    <a href="">Lorem ipsum dolor</a>
+                                                </li>
+                                                <li class="category">
+                                                    <a href="">Sit amet conse</a>
+                                                </li>
+                                                <li class="category">
+                                                    <a href="">Ctetur adipisicing elit</a>
+                                                </li>
+                                                <li class="category">
+                                                    <a href="">Sed do eiusmod</a>
+                                                </li>
+                                                <li class="category">
+                                                    <a href="">Tempor incididunt ut</a>
+                                                </li>
+                                                <li class="category">
+                                                    <a href="">Labore et dolore</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div class="col-pic">
+                                            <a href="" >
+                                                <img class="img" src="img/menu-baner1.png" />
+                                            </a>
+                                        </div>
+                                        <div class="col-pic2">
+                                            <a href="" >
+                                                <img class="img" src="img/menu-baner2.png" />
+                                            </a>
+                                        </div>
+                                        <div class="col-pic2">
+                                            <a href="" >
+                                                <img class="img" src="img/menu-baner3.png" />
+                                            </a>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class=""><a class="hvr-shutter-out-vertical" href="Dining-Room.php">
+                                    Dining Room
+                                </a> </li>
+                                <li class="new_badge"><a class="hvr-shutter-out-vertical" href="Bedroom.php">
+                                    Bedroom
+                                    <span class="menu_badge">New!</span>
+                                </a> </li>
+                                <li class=""><a class="hvr-shutter-out-vertical" href="Accent-Chairs.php">
+                                    Accent Chairs
+                                </a> </li>
+                                <li class="sale_badge"><a class="hvr-shutter-out-vertical" href="Accessories.php">
+                                    Accessories
+                                    <span class="menu_badge">Sale!</span>
+                                </a> </li>
+                                <li class=""><a class="hvr-shutter-out-vertical" href="Kids-World.php">
+                                    Kids'World
+                                </a> </li>
+                                <li class=""><a class="hvr-shutter-out-vertical" href="Office.php">
+                                    Office
+                                </a> </li>
+                                <li class=""><a class="hvr-shutter-out-vertical" href="Mattresses.php">
+                                    Mattresses
+                                </a> </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div id="gear-right">
+                    <i class="fa fa-cogs icon-2x icon-light"></i>
+                </div>
+                <form method="post" action="">
+                    <div id="tool">
+                        <p>The customization tool allows you to make color and font changes in your theme.</p>
+                        <div class="list-tools">
+                            <p id="theme-title">
+                                THEME COLOR
+                            </p>
+                        </div>
+                        <ul id="color-box">
+                            <li class="theme1">
+                                <div class="color-theme1"></div>
+                                <div class="color-theme2"></div>
+                            </li>
+                            <li class="theme2">
+                                <div class="color-theme1"></div>
+                                <div class="color-theme2"></div>
+                            </li>
+                            <li class="theme3">
+                                <div class="color-theme1"></div>
+                                <div class="color-theme2"></div>
+                            </li>
+                            <li class="theme4">
+                                <div class="color-theme1"></div>
+                                <div class="color-theme2"></div>
+                            </li>
+                        </ul>
+                        <div class="list-tools">
+                            <p id="buttons-title">
+                                NEWSLETTER POP-UP
+                            </p>
+                        </div>
+                        <div class="button-box">
+                            <button id="module">
+                                <span class="bg"></span>
+                                <span class="enable">On</span>
+                                <span class="disable">Off</span>
+                            </button>
+                        </div>
+                        <div class="list-tools">
+                            <p id="buttons-title">
+                                OLARK CHAT
+                            </p>
+                        </div>
+                        <div class="button-box">
+                            <button id="module" onclick="changeBtn()">
+                                <span class="bg"></span>
+                                <span class="enable">On</span>
+                                <span class="disable">Off</span>
+                            </button>
+                        </div>
+                        <div class="btn-tools">
+                            <button id="reset" class="btn-1" type="button">Reset</button>
+                        </div>
+                        <div id="block-advertisement">
+                            <a href="">
+                                <img class="responsive" src="img/advertisement.png" />
+                            </a>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="page" class="Ullamcorper-erat">
+    <div class="columns-container">
+        <div id="columns" class="container">
+            <div class="bread">
+                <a class="home" href=""><i class="fa fa-home"></i></a>
+                <span class="navigation_page">
+                    <span class="navigation-page">
+                        <span>
+                            <a href="Blog.php">All Blog News</a>
+                        </span>
+                    </span>
+                        <strong>Ullamcorper erat</strong>
+                </span>
+            </div>
+            <div class="row">
+                <div class="large-left">
+                    <div class="row">
+                        <div class="blog_center_column">
+                            <h1 class="page-heading">ULLAMCORPER ERAT</h1>
+                            <div id="sdsblogCategory">
+                                <img class="image" src="img/erat.png"/>
+                                <p>
+                                    <strong>Vivamus vitae laoreet erat</strong>
+                                    , eget egestas est. Donec at auctor arcu, at suscipit orci. Quisque vel risus odio.
+                                    In porttitor, neque et cursus interdum, lacus felis scelerisque risus, id euismod
+                                    sapien lorem et tortor. Curabitur augue sem, lobortis vitae sapien sit amet, tempus
+                                    posuere sapien. Aenean ut felis a orci volutpat maximus quis lobortis sem.
+                                    <span class="center-line">Cum sociis natoque penatibus et magnis</span>
+                                    dis parturient montes, nascetur ridiculus mus. Sed felis tortor, tempor ut mattis
+                                    a, commodo at diam. Nullam nunc lorem, ornare id magna vitae, lobortis lacinia
+                                    magna. Pellentesque habitant morbi tristique senectus et netus et malesuada fames
+                                    ac turpis egestas. Mauris in aliquet sem, sit amet placerat erat. Maecenas non
+                                    tellus rutrum, eleifend diam eget, eleifend massa. Donec luctus sapien justo,
+                                    <span class="under-line"><em>eget tincidunt tellus molestie ut</em></span>. Mauris in pharetra eros, eu hendrerit tellus.
+                                    Pellentesque habitant morbi tristique senectus et netus et malesuada
+                                    fames ac turpis egestas
+                                </p>
+                            </div>
+                            <div id="smart_blog" class="block">
+                                <div class="sdsarticle clearfix">
+                                    <div id="smartblogpost">
+                                        <h2 class="title_block">
+                                            <a href="#">PELLENTESQUE SOLLICITUDIN IACULIS GRAVIDA</a>
+                                        </h2>
+                                        <div class="articleContent">
+                                            <a class="image_link" href="#">
+                                                <img src="img/blog1.png"/>
+                                            </a>
+                                            <div class="des">
+                                                Pellentesque sollicitudin iaculis gravida. Praesent ac tortor dapibus,
+                                                imperdiet arcu in, aliquet est. Praesent ut risus tincidunt, euismod
+                                                diam sit amet, vulputate dui. Cras luctus turpis non quam
+                                                <a class="read-more" href="#"><strong>Read more...</strong></a>
+                                            </div>
+                                            <div class="Header">
+                                                <div class="postInfo">
+                                                    Posted by
+                                                    <span itemprop="author">
+                                                        <i class="fa fa-user"></i>
+                                                            Admin Administrator
+                                                    </span>
+                                                    <span itemprop="articleSection">
+                                                        <i class="fa fa-tags"></i>
+                                                        <a href="#">Ullamcorper erat</a>
+                                                    </span>
+                                                    <span class="comment">
+                                                        <i class="fa fa-comments"></i>
+                                                        <a title="comments" href="#">5 Comments</a>
+                                                    </span>
+                                                    <span class="views">
+                                                        <i class="fa fa-eye"></i>
+                                                        views (158)
+                                                    </span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="sdsarticle clearfix" id="p2">
+                                    <div id="smartblogpost">
+                                        <h2 class="title_block">
+                                            <a href="#">ALIQUAM ELEMENTUM LOREM AC EFFICITUR TRISTIQUE</a>
+                                        </h2>
+                                        <div class="articleContent">
+                                            <a class="image_link" href="#">
+                                                <img src="img/blog2.png"/>
+                                            </a>
+                                            <div class="des">
+                                                Aliquam elementum lorem ac efficitur tristique. Duis vehicula non
+                                                sapien eget rhoncus. Nulla et congue nunc, id eleifend neque. In hac
+                                                habitasse platea dictumst. Nunc lacinia fringilla mi. Praesent q
+                                                <a class="read-more" href="#"><strong>Read more...</strong></a>
+                                            </div>
+                                            <div class="Header">
+                                                <div class="postInfo">
+                                                    Posted by
+                                                    <span itemprop="author">
+                                                        <i class="fa fa-user"></i>
+                                                            Admin Administrator
+                                                    </span>
+                                                    <span itemprop="articleSection">
+                                                        <i class="fa fa-tags"></i>
+                                                        <a href="#">Ullamcorper erat</a>
+                                                    </span>
+                                                    <span class="comment">
+                                                        <i class="fa fa-comments"></i>
+                                                        <a title="comments" href="#">0 Comments</a>
+                                                    </span>
+                                                    <span class="views">
+                                                        <i class="fa fa-eye"></i>
+                                                        views (132)
+                                                    </span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="bottom-pagination">
+                                <ul class="pagination pull-right">
+                                    <li class="active">
+                                        <span class="page-active">1</span>
+                                    </li>
+                                    <li>
+                                        <a class="page-link" href="#">2</a>
+                                    </li>
+                                </ul>
+                                <div class="post-count">Showing 1 to 2 of 3 (1 Pages)</div>
+                            </div>
+                        </div>
+                        <div class="left_column">
+                            <section id="informations_block_left_1" class="block informations_block_left">
+                                <h4 class="title_block h4">Blog Categories</h4>
+                                <ul>
+                                    <li>
+                                        <a href="#">
+                                            <i class="fa fa-angle-right"></i>
+                                            [3] Ullamcorper erat
+                                        </a>
+                                    </li>
+                                </ul>
+                            </section>
+                            <section id="new-products_block_right" class="block products_block">
+                                <h4 class="title_block h4">Latest Comments</h4>
+                                <div class="block_content product-block">
+                                    <ul class="products">
+                                        <li class="clearfix">
+                                            <a class="products-image borderNone" href="#">
+                                                <img class="replace" src="img/user.png"/>
+                                            </a>
+                                            <div class="product-content">
+                                                <p class="product-description">Nick Nickelson <strong>on</strong> <a href="#"> In hac habitasse platea
+                                                    dictumst. Nunc lacinia fringilla mi. Praesent quam nunc, pretium et
+                                                    aliquam ut, sollicitudin vel augue.</a></p>
+                                            </div>
+                                        </li>
+                                        <li class="clearfix">
+                                            <a class="products-image borderNone" href="#">
+                                                <img class="replace" src="img/user.png"/>
+                                            </a>
+                                            <div class="product-content">
+                                                <p class="product-description">Anny Dawson <strong>on</strong>
+                                                    <a href="#"> Vivamus iaculis eleifend
+                                                        varius. Vestibulum quis justo massa. Mauris et eros mollis, placerat
+                                                        mauris nec, mattis purus. Aliquam elementum lorem ac efficitur
+                                                        tristique. Duis vehicula non sapien eget rhoncus. Nulla et congue
+                                                        nunc, id eleifend neque.</a></p>
+
+                                            </div>
+                                        </li>
+                                        <li class="clearfix">
+                                            <a class="products-image borderNone" href="#">
+                                                <img class="replace" src="img/user.png"/>
+                                            </a>
+                                            <div class="product-content">
+                                                <p class="product-description">Fred Crue <strong>on</strong>
+                                                    <a href="#"> Suspendisse magna nisi,
+                                                        cursus ut condimentum eu, dapibus at dolor. Sed venenatis sapien
+                                                        quis urna consequat, quis tempor neque porttitor.</a></p>
+
+                                            </div>
+                                        </li>
+                                        <li class="clearfix">
+                                            <a class="products-image borderNone" href="#">
+                                                <img class="replace" src="img/user.png"/>
+                                            </a>
+                                            <div class="product-content">
+                                                <p class="product-description">Anna Lee <strong>on</strong>
+                                                    <a href="#"> Cras insem in arcu ultrices egestas sit amet
+                                                        nec metus.</a></p>
+
+                                            </div>
+                                        </li>
+                                        <li class="clearfix">
+                                            <a class="products-image borderNone" href="#">
+                                                <img class="replace" src="img/user.png"/>
+                                            </a>
+                                            <div class="product-content">
+                                                <p class="product-description">John Doe <strong>on</strong>
+                                                    <a href="#">Fusce id
+                                                        felis tempor,mollis ligula ac, iaculis massa. Aliquam nec mollis
+                                                        neque,eget laoreet nibh. Vivamus dictum tempor enim, a porttitor dui
+                                                        lacinia vitae.</a></p>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </section>
+                            <section id="special_block_right" class="block">
+                                <h4 class="title_block h4">Popular Articles</h4>
+                                <div class="block_content product-block">
+                                    <ul class="products">
+                                        <li class="clearfix">
+                                            <a class="products-image" href="#">
+                                                <img class="replace" src="img/popular1.png"/>
+                                            </a>
+                                            <div class="product-content">
+                                                <p class="product-description" onmouseover="changeBlogColor(this)"
+                                                   onmouseout="changeBlogColor2(this)"
+                                                >Pellentesque sollicitudin
+                                                    iaculis gravida</p>
+                                                <div class="price-box">
+                                                    <span class="price special-price italic">Oct 15, 2014</span>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li class="clearfix">
+                                            <a class="products-image" href="#">
+                                                <img class="replace" src="img/popular2.png"/>
+                                            </a>
+                                            <div class="product-content">
+                                                <p class="product-description"
+                                                   onmouseover="changeBlogColor(this)"
+                                                   onmouseout="changeBlogColor2(this)"
+                                                >Pellentesque sollicitudin
+                                                    iaculis gravida</p>
+                                                <div class="price-box">
+                                                    <span class="price special-price italic">Oct 15, 2014</span>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li class="clearfix">
+                                            <a class="products-image" href="#">
+                                                <img class="replace" src="img/popular3.png"/>
+                                            </a>
+                                            <div class="product-content">
+                                                <p class="product-description"
+                                                   onmouseover="changeBlogColor(this)"
+                                                   onmouseout="changeBlogColor2(this)"
+                                                >Pellentesque sollicitudin
+                                                    iaculis gravida</p>
+                                                <div class="price-box">
+                                                    <span class="price special-price italic">Oct 15, 2014</span>
+                                                </div>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </section>
+                            <section id="special_block_right" class="block">
+                                <h4 class="title_block h4">Popular Articles</h4>
+                                <div class="block_content product-block">
+                                    <ul class="products">
+                                        <li class="clearfix">
+                                            <a class="products-image" href="#">
+                                                <img class="replace" src="img/popular1.png"/>
+                                            </a>
+                                            <div class="product-content">
+                                                <p class="product-description"
+                                                   onmouseover="changeBlogColor(this)"
+                                                   onmouseout="changeBlogColor2(this)"
+                                                >Pellentesque sollicitudin
+                                                    iaculis gravida</p>
+                                                <div class="price-box">
+                                                    <span class="price special-price italic">Oct 15, 2014</span>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li class="clearfix">
+                                            <a class="products-image" href="#">
+                                                <img class="replace" src="img/popular2.png"/>
+                                            </a>
+                                            <div class="product-content">
+                                                <p class="product-description"
+                                                   onmouseover="changeBlogColor(this)"
+                                                   onmouseout="changeBlogColor2(this)"
+                                                >Pellentesque sollicitudin
+                                                    iaculis gravida</p>
+                                                <div class="price-box">
+                                                    <span class="price special-price italic">Oct 15, 2014</span>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li class="clearfix">
+                                            <a class="products-image" href="#">
+                                                <img class="replace" src="img/popular3.png"/>
+                                            </a>
+                                            <div class="product-content">
+                                                <p class="product-description"
+                                                   onmouseover="changeBlogColor(this)"
+                                                   onmouseout="changeBlogColor2(this)"
+                                                >Pellentesque sollicitudin
+                                                    iaculis gravida</p>
+                                                <div class="price-box">
+                                                    <span class="price special-price italic">Oct 15, 2014</span>
+                                                </div>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </section>
+                            <section id="stores_block_left" class="block">
+                                <h4 class="title_block h4">Blog Search</h4>
+                                <div class="search_block">
+                                    <form id="search_box">
+                                        <input value="0" type="hidden"/>
+                                        <input id="search_query_top" class="search_query" value="search" type="text"/>
+                                        <button class="btn" type="submit" >
+                                            <a href="Blog-Search-Result.php" class="fa fa-search"></a>
+                                            <span>Search</span>
+                                        </button>
+                                    </form>
+                                </div>
+                            </section>
+                            <section id="viewed-products_block_left" class="block last">
+                                <h4 class="title_block h4">Tags Post</h4>
+                                <div class="block_content product-block">
+                                    <a href="#">lorem</a>
+                                    <a href="#">ipsum</a>
+                                    <a href="#">dolore</a>
+                                </div>
+                            </section>
+                            <section id="informations_block_left_1" class="block informations_block_left blog_left_top">
+                                <h4 class="title_block h4">Blog Archive</h4>
+                                <ul>
+                                    <li>
+                                        <a  class="border_none" href="#">
+                                            <i class="fa fa-angle-right"></i>
+                                            October-2014
+                                        </a>
+                                    </li>
+                                </ul>
+                            </section>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="newsletter-overlay">
+            <div id="newsletter_popup" class="tmnewsletter">
+                <div class="tmnewsletter-inner">
+                    <img src="img/override-logo.png"/>
+                    <div class="tmnewsletter-close icon" onclick="close_override()">
+                        <i class="fa fa-times"></i>
+                    </div>
+                    <div class="tmnewsletter-header">
+                        <h4>Newsletter</h4>
+                    </div>
+                    <div class="tmnewsletter-content">
+                        <div class="status-message"></div>
+                        <p class="description">Sign up for our exclusive email list and be the first to know about
+                            new products, special offers, store event and other discount information.</p>
+                        <div class="form-group">
+                            <input class="form-control" value="Enter your e-mail" />
+                            <button class="btn">
+                                <span>Subscribe</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<script type="text/javascript" src="js/furniture.js"></script>
+<script type="javascript" src="js/swiper.min.js" ></script>
+<section class="footer">
+    <div class="main">
+        <ul class="big-list">
+            <li class="cols">
+                <p class="title">
+                    Categories
+                </p>
+                <ul class="small-list">
+                    <li><a href="Living-Room.php">Living Room</a></li>
+                    <li><a href="Dining-Room.php">Dining Room</a></li>
+                    <li><a href="Bedroom.php">Bedroom</a></li>
+                    <li><a href="Accent-Chairs.php">Accent Chairs</a></li>
+                    <li><a href="Accessories.php">Accessories</a></li>
+                    <li><a href="Kids-World.php">Kids' World</a></li>
+                    <li><a href="Office.php">Office</a></li>
+                    <li><a href="Mattresses.php">Mattresses</a></li>
+                </ul>
+            </li>
+            <li class="cols">
+                <p class="title">
+                    Information
+                </p>
+                <ul class="small-list">
+                    <li><a href="Living-Room.php">Specials</a></li>
+                    <li><a href="Dining-Room.php">New products</a></li>
+                    <li><a href="Bedroom.php">Top sellers</a></li>
+                    <li><a href="Accent-Chairs.php">Our stores</a></li>
+                    <li><a href="Accessories.php">Contact us</a></li>
+                    <li><a href="Kids-World.php">About us</a></li>
+                    <li><a href="Office.php">Pages configuration</a></li>
+                    <li><a href="Mattresses.php">Sitemap</a></li>
+                </ul>
+            </li>
+            <li class="cols">
+                <p class="title1">
+                    <a href="">My account</a>
+                </p>
+                <ul class="small-list">
+                    <li><a href="Living-Room.php">My orders</a></li>
+                    <li><a href="Dining-Room.php">My merchandise returns</a></li>
+                    <li><a href="Bedroom.php">My credit slips</a></li>
+                    <li><a href="Accent-Chairs.php">My addresses</a></li>
+                    <li><a href="Accessories.php">My personal info</a></li>
+                </ul>
+            </li>
+            <li class="cols1">
+                <h1>FURNITURE</h1>
+                <p class="tip">Call us now: </p>
+                <h3 class="phone">(800)2345-6789</h3>
+                <ul class="icons">
+                    <li><a href="" id="icon" class="fa fa-facebook"></a> </li>
+                    <li><a href="" id="icon" class="fa fa-twitter"></a> </li>
+                    <li><a href="" id="icon" class="fa fa-google-plus"></a> </li>
+                    <li><a href="" id="icon" class="fa fa-youtube"></a> </li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+    <div class="copyright">
+        <p class="symbol">©</p>
+        <p class="date">2016</p>
+        <a href="">Ecommerce software by PrestaShop™</a>
+    </div>
+    <div class="nothing"></div>
+</section>
+<script src="js/swiper.min.js"></script>
+<script type="text/javascript">
+    var mySwiper = new Swiper('.swiper-container',{
+        loop: true,
+        autoplay: 2000,
+        pagination: '.swiper-pagination',
+        pagination: '.swiper-pagination',
+    });
+</script>
+</body>
+</html>
